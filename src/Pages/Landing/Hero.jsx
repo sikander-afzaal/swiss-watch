@@ -1,4 +1,4 @@
-import Button from "../../Components/Button/Button";
+import Button from "../../Components/Button";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
