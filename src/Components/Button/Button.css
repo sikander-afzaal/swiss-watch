@@ -1,0 +1,18 @@
+.cta-btn {
+  padding: 0px 36px;
+  height: 55px;
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: 100vh;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+.cta-btn:hover {
+  background-color: white;
+  color: black;
+}
