@@ -1,5 +1,4 @@
-import "./App.css";
-import Header from "./Layout/Header/Header";
+import Header from "./Layout/Header";
 import Landing from "./Pages/Landing/Landing";
 
 function App() {
