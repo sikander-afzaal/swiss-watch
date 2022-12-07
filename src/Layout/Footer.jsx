@@ -72,7 +72,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex justify-center items-center py-6 mt-8 bg-[rgba(255,255,255,0.04)]">
+      <div className="flex justify-center w-full items-center py-6 mt-8 bg-[rgba(255,255,255,0.04)]">
         <p className="text-white font-normal text-center text-base">
           Copyright © 2021{" "}
           <a href="#" target={"blank"} className="no-underline text-blue">

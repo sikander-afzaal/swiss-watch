@@ -11,11 +11,11 @@ const FaqTab = ({ question, answer }) => {
     <div
       className={`flex justify-start border-[2px] border-solid transition-all ${
         active ? "border-blue" : "border-transparent"
-      } items-center flex-col w-full rounded-[12px] overflow-hidden`}
+      } items-center bg-[rgba(255,255,255,0.06)] flex-col w-full rounded-[12px] overflow-hidden`}
     >
       <div
         onClick={() => setActive((prev) => !prev)}
-        className={`w-full flex gap-3 justify-between cursor-pointer items-center p-5  bg-[rgba(255,255,255,0.06)]`}
+        className={`w-full flex gap-3 justify-between cursor-pointer items-center p-5  `}
       >
         <h2
           className={`${
