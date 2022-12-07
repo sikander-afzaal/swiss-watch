@@ -1,0 +1,88 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTwitter,
+  faDiscord,
+} from "@fortawesome/free-brands-svg-icons";
+
+const Footer = () => {
+  return (
+    <div className="pt-[250px] -mt-[174px] full bg-[rgba(255,255,255,0.06)]">
+      <div className="section gap-7 flex-col">
+        <img src="/logo.png" alt="" />
+        <div className="flex flex-wrap justify-center items-center gap-4">
+          <a
+            href="#"
+            className="text-white capitalize font-normal text-lg leading-[1] no-underline"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            className="text-white capitalize font-normal text-lg leading-[1] no-underline"
+          >
+            About
+          </a>
+          <a
+            href="#"
+            className="text-white capitalize font-normal text-lg leading-[1] no-underline"
+          >
+            Roadmap
+          </a>
+          <a
+            href="#"
+            className="text-white capitalize font-normal text-lg leading-[1] no-underline"
+          >
+            Sales & Rewards
+          </a>
+          <a
+            href="#"
+            className="text-white capitalize font-normal text-lg leading-[1] no-underline"
+          >
+            Team
+          </a>
+          <a
+            href="#"
+            className="text-white capitalize font-normal text-lg leading-[1] no-underline"
+          >
+            Contact
+          </a>
+        </div>
+        <div className="flex justify-center items-center gap-4">
+          <a
+            href="#"
+            className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[48px] w-[48px] grid place-items-center border-white border-solid rounded-full text-[20px]"
+            target={"blank"}
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a
+            href="#"
+            className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[48px] w-[48px] grid place-items-center border-white border-solid rounded-full text-[20px]"
+            target={"blank"}
+          >
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a
+            href="#"
+            className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[48px] w-[48px] grid place-items-center border-white border-solid rounded-full text-[20px]"
+            target={"blank"}
+          >
+            <FontAwesomeIcon icon={faDiscord} />
+          </a>
+        </div>
+      </div>
+      <div className="flex justify-center items-center py-6 mt-8 bg-[rgba(255,255,255,0.04)]">
+        <p className="text-white font-normal text-center text-base">
+          Copyright © 2021{" "}
+          <a href="#" target={"blank"} className="no-underline text-blue">
+            Swisscryptowatch.com
+          </a>{" "}
+          All rights reserved.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

@@ -1,5 +1,11 @@
 import { useState } from "react";
-// import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faTelegramPlane,
+  faYoutube,
+  faRedditAlien,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   const [headerToggle, setHeaderToggle] = useState(false);
@@ -68,17 +74,33 @@ const Header = () => {
             </a>
           </nav>
           <div className="flex justify-center items-center gap-[10px]">
-            <a href="#" target={"blank"}>
-              <img src="/twitter.png" alt="" />
+            <a
+              href="#"
+              className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
+              target={"blank"}
+            >
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="#" target={"blank"}>
-              <img src="/telegram.png" alt="" />
+            <a
+              href="#"
+              className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
+              target={"blank"}
+            >
+              <FontAwesomeIcon icon={faTelegramPlane} />
             </a>
-            <a href="#" target={"blank"}>
-              <img src="/reddit.png" alt="" />
+            <a
+              href="#"
+              className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
+              target={"blank"}
+            >
+              <FontAwesomeIcon icon={faRedditAlien} />
             </a>
-            <a href="#" target={"blank"}>
-              <img src="/youtube.png" alt="" />
+            <a
+              href="#"
+              className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
+              target={"blank"}
+            >
+              <FontAwesomeIcon icon={faYoutube} />
             </a>
           </div>
         </div>
