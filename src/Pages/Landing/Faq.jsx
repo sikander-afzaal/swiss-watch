@@ -9,7 +9,7 @@ const Faq = () => {
         <p className="text-white text-base sm:text-[20px] leading-[30px] ">
           The key that unlocks you into The Swiss Cryptowatch Club
         </p>
-        <div className="flex justify-center text-left items-center flex-col w-full mt-5 gap-4">
+        <div className="max-w-[1160px] flex justify-center text-left items-center flex-col w-full mt-5 gap-4">
           <FaqTab
             question="How Do I buy a CryptoWatch NFT?"
             answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."

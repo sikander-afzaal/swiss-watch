@@ -6,6 +6,7 @@ import Details from "./Details";
 import Faq from "./Faq";
 import Hero from "./Hero";
 import Soon from "./Soon";
+import Subscribe from "./Subscribe";
 import Team from "./Team";
 import Value from "./Value";
 
@@ -22,6 +23,7 @@ const Landing = () => {
       <Team />
       <Blogs />
       <Faq />
+      <Subscribe />
     </div>
   );
 };
