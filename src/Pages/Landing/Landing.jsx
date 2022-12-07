@@ -3,6 +3,7 @@ import Blogs from "./Blogs";
 import Club from "./Club";
 import Collection from "./Collection";
 import Details from "./Details";
+import Faq from "./Faq";
 import Hero from "./Hero";
 import Soon from "./Soon";
 import Team from "./Team";
@@ -20,6 +21,7 @@ const Landing = () => {
       <Soon />
       <Team />
       <Blogs />
+      <Faq />
     </div>
   );
 };
