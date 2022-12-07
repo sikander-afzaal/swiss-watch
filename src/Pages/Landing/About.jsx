@@ -52,7 +52,8 @@ const About = () => {
   }, []);
 
   return (
-    <div className="full  mt-[80px] xl:mt-[140px]">
+    <div className="full isolate relative  mt-[80px] xl:mt-[140px]">
+      <div className="absolute rounded-full -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px] right-[0%] w-[700px] h-[700px]"></div>
       <div className="xl:flex-row flex-col section gap-[30px] xl:gap-[120px]">
         <div className="w-full xl:overflow-x-visible overflow-x-hidden flex justify-center items-center relative h-auto  min-h-[450px] xl:min-h-[600px]">
           <img
@@ -98,7 +99,7 @@ const About = () => {
           ) : (
             <svg
               width="149"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+              className="absolute  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               height="148"
               viewBox="0 0 149 148"
               fill="none"

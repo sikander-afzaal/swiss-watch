@@ -3,7 +3,8 @@ import HeadingComp from "../../Components/HeadingComp";
 
 const Club = () => {
   return (
-    <div className="full bg-[rgba(255,255,255,0.06)] mt-[100px]">
+    <div className="full bg-[rgba(255,255,255,0.06)] relative isolate mt-[100px]">
+      <div className="absolute rounded-full -bottom-[50%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  right-0 w-[700px] h-[700px]"></div>
       <div className="max-w-max w-full px-5 py-[70px] xl:py-[100px] flex justify-center xl:flex-row flex-col-reverse items-center gap-[50px] xl:gap-[100px] ">
         <div className="flex justify-center items-center text-center xl:text-left xl:items-start flex-col gap-[15px]">
           <HeadingComp

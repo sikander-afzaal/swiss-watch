@@ -5,7 +5,8 @@ import Button from "../../Components/Button";
 
 const Blogs = () => {
   return (
-    <div className="full mt-[170px] xl:mt-[150px]">
+    <div className="full mt-[170px] xl:mt-[150px] relative">
+      <div className="absolute rounded-full -top-[10%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col gap-3 text-center">
         <HeadingComp head="Latest News" sub="blog" />
         <p className="text-white text-base sm:text-[20px] leading-[30px] ">

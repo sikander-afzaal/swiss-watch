@@ -7,7 +7,7 @@ const Hero = () => {
   const marqueeTextStyles =
     "font-bold text-[24px] xl:text-[42px] text-white flex justify-center items-center uppercase leading-[24px] xl:leading-[1] gap-5 w-full xl:gap-[50px]";
   return (
-    <div className="full ">
+    <div className="full bg-hero">
       <section className=" section items-center   xl:items-start pt-[130px] flex-col xl:flex-row xl:gap-0 gap-[40px]  xl:pt-[120px]">
         <div className="flex items-center text-center xl:text-left gap-[10px] justify-center xl:items-start flex-col xl:gap-[30px]">
           <h2 className="font-bold text-[36px] xl:text-[64px] xl:leading-[78px] leading-[44px] text-white">
@@ -38,7 +38,6 @@ const Hero = () => {
           <Splide
             extensions={{ AutoScroll }}
             options={{
-              width: "100%",
               type: "loop",
               drag: "free",
               autoWidth: true,

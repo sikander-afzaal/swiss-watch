@@ -4,7 +4,8 @@ import "@splidejs/react-splide/css";
 
 const Team = () => {
   return (
-    <div className="full mt-[70px] xl:mt-[150px] ">
+    <div className="full relative mt-[70px] xl:mt-[150px] ">
+      <div className="absolute rounded-full top-[20%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  right-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col gap-3 text-center">
         <HeadingComp head="Swiss Cryptowatch Club Team" sub="our brain" />
         <p className="text-white text-base sm:text-[20px] leading-[30px] ">

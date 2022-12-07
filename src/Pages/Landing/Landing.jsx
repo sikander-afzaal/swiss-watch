@@ -5,6 +5,7 @@ import Collection from "./Collection";
 import Details from "./Details";
 import Faq from "./Faq";
 import Hero from "./Hero";
+import Roadmap from "./Roadmap";
 import Soon from "./Soon";
 import Subscribe from "./Subscribe";
 import Team from "./Team";
@@ -19,6 +20,7 @@ const Landing = () => {
       <Club />
       <Details />
       <Value />
+      <Roadmap />
       <Soon />
       <Team />
       <Blogs />

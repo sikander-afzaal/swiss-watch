@@ -1,7 +1,7 @@
 import Button from "../../Components/Button";
 import gsap from "gsap";
 import Flip from "gsap/Flip";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Soon = () => {
   const [activeWatch, setActiveWatch] = useState(1);
@@ -49,9 +49,32 @@ const Soon = () => {
       targets: [watch1.current, watch2.current, watch3.current],
     });
   }, [activeWatch]);
+  useEffect(() => {
+    setTimeout(() => {
+      //autoplay functionality --------------
+      const currentNum = activeWatch;
+
+      switch (currentNum) {
+        case 1:
+          setActiveWatch(2);
+          break;
+        case 2:
+          setActiveWatch(3);
+          break;
+        case 3:
+          setActiveWatch(1);
+          break;
+        default:
+          setActiveWatch(1);
+          break;
+      }
+    }, 5000);
+  }, [activeWatch]);
 
   return (
-    <div className="full mt-[70px] xl:mt-[150px] bg-[rgba(255,255,255,0.06)] ">
+    <div className="full mt-[70px] relative xl:mt-[150px] bg-[rgba(255,255,255,0.06)] ">
+      <div className="absolute rounded-full top-[55%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
+      <div className="absolute rounded-full top-[0%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  right-0 w-[700px] h-[700px]"></div>
       <div className="section xl:flex-row flex-col gap-6 py-[70px] xl:py-[160px]">
         <div className="flex w-full justify-center items-center xl:text-left text-center xl:items-start flex-col gap-3">
           <h2 className=" text-blue font-bold sm:text-[64px] text-[36px] leading-[44px] sm:leading-[78px]">

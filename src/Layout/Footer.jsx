@@ -7,7 +7,8 @@ import {
 
 const Footer = () => {
   return (
-    <div className="pt-[250px] -mt-[174px] full bg-[rgba(255,255,255,0.06)]">
+    <div className="relative overflow-y-hidden pt-[250px] -mt-[174px] isolate full bg-[rgba(255,255,255,0.06)]">
+      <div className="absolute rounded-full top-[40%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
       <div className="section gap-7 flex-col">
         <img src="/logo.png" alt="" />
         <div className="flex flex-wrap justify-center items-center gap-4">

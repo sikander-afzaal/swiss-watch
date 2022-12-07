@@ -3,7 +3,8 @@ import HeadingComp from "../../Components/HeadingComp";
 
 const Faq = () => {
   return (
-    <div className="full mt-[160px] xl:mt-[120px]">
+    <div className="relative isolate full mt-[160px] xl:mt-[120px]">
+      <div className="absolute rounded-full top-[70%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  right-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col gap-3 text-center">
         <HeadingComp sub="faqs" head="Frequently Asked Questions" />{" "}
         <p className="text-white text-base sm:text-[20px] leading-[30px] ">

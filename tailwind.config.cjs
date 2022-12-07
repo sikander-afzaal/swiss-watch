@@ -20,6 +20,9 @@ module.exports = {
       boxShadow: {
         blogShadow: "0px 48px 90px rgba(0, 0, 0, 0.48)",
       },
+      backgroundImage: {
+        hero: " radial-gradient(51.57% 51.57% at 73.36% 48.43%, #4A4A4E 0%, #04060F 100%)",
+      },
     },
   },
   plugins: [],

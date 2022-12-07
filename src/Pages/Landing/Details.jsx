@@ -3,7 +3,9 @@ import HeadingComp from "../../Components/HeadingComp";
 
 const Details = () => {
   return (
-    <div className="full mt-[80px] xl:mt-[120px]">
+    <div className="full isolate relative mt-[80px] xl:mt-[120px]">
+      <div className="absolute rounded-full top-[45%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
+      <div className="absolute rounded-full top-[90%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  right-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col gap-[80px] xl:gap-[150px]">
         <div className="flex justify-center xl:flex-row flex-col items-center gap-[50px] xl:gap-[100px] ">
           <img

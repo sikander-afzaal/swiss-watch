@@ -3,7 +3,10 @@ import HeadingComp from "../../Components/HeadingComp";
 
 const Collection = () => {
   return (
-    <div className="full mt-[80px] xl:mt-[140px]">
+    <div className="full  relative mt-[80px] xl:mt-[140px]">
+      <div className="absolute rounded-full top-[8%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[200px]  left-0 w-[700px] h-[700px]"></div>
+      <div className="absolute rounded-full top-[48%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[300px]  right-0 w-[700px] h-[700px]"></div>
+      <div className="absolute rounded-full top-[90%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col">
         <div className="flex gap-4 w-full max-w-[950px] justify-center items-center text-center flex-col">
           <HeadingComp sub="SCWC" head="Swiss Crypto Watch Winter Collection" />
