@@ -1,6 +1,6 @@
 const Subscribe = () => {
   return (
-    <div className="full mt-[80px] lg:mt-[120px] px-5">
+    <div id="contact" className="full mt-[80px] lg:mt-[120px] px-5">
       <div className="section bg-blue rounded-[20px] lg:px-5 px-2 lg:flex-row flex-col justify-around gap-[40px] lg:gap-5 py-8 lg:py-[100px]">
         <div className="flex justify-center items-center lg:items-start flex-col gap-3 lg:text-left text-center xl:gap-5">
           <h4 className="text-white font-semibold text-[16px] xl:text-[24px] leading-[16px] xl:leading-[24px]">

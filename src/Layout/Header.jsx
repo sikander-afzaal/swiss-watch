@@ -33,42 +33,42 @@ const Header = () => {
             <a
               className={navlinkStyles}
               onClick={() => setHeaderToggle(false)}
-              href="#"
+              href="#home"
             >
               Home
             </a>
             <a
               className={navlinkStyles}
               onClick={() => setHeaderToggle(false)}
-              href="#"
+              href="#about"
             >
               About
             </a>
             <a
               className={navlinkStyles}
               onClick={() => setHeaderToggle(false)}
-              href="#"
+              href="#roadmap"
             >
               Roadmap
             </a>
             <a
               className={navlinkStyles}
               onClick={() => setHeaderToggle(false)}
-              href="#"
+              href="#sales"
             >
               Sales & Rewards
             </a>
             <a
               className={navlinkStyles}
               onClick={() => setHeaderToggle(false)}
-              href="#"
+              href="#team"
             >
               Team
             </a>
             <a
               className={navlinkStyles}
               onClick={() => setHeaderToggle(false)}
-              href="#"
+              href="#contact"
             >
               Contact
             </a>

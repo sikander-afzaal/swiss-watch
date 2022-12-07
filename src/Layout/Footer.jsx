@@ -13,37 +13,37 @@ const Footer = () => {
         <img src="/logo.png" alt="" />
         <div className="flex flex-wrap justify-center items-center gap-4">
           <a
-            href="#"
+            href="#home"
             className="text-white capitalize font-normal text-lg leading-[1] no-underline"
           >
             Home
           </a>
           <a
-            href="#"
+            href="#about"
             className="text-white capitalize font-normal text-lg leading-[1] no-underline"
           >
             About
           </a>
           <a
-            href="#"
+            href="#roadmap"
             className="text-white capitalize font-normal text-lg leading-[1] no-underline"
           >
             Roadmap
           </a>
           <a
-            href="#"
+            href="#sales"
             className="text-white capitalize font-normal text-lg leading-[1] no-underline"
           >
             Sales & Rewards
           </a>
           <a
-            href="#"
+            href="#team"
             className="text-white capitalize font-normal text-lg leading-[1] no-underline"
           >
             Team
           </a>
           <a
-            href="#"
+            href="#contact"
             className="text-white capitalize font-normal text-lg leading-[1] no-underline"
           >
             Contact

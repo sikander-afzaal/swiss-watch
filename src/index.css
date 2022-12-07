@@ -52,3 +52,7 @@ body {
 .slider-arrows .splide__arrow svg {
   fill: white;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block: 100px;
+}

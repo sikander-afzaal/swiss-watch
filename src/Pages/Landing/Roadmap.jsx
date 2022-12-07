@@ -5,7 +5,10 @@ const Roadmap = () => {
     "text-blue uppercase text-[24px] lg:text-[30px] leading-[24px] lg:leading-[30px] font-bold";
   const roadmapDescStyles = "text-sm lg:text-base text-white max-w-[306px]";
   return (
-    <div className="full mt-[100px] xl:mt-[150px] relative isolate">
+    <div
+      id="roadmap"
+      className="full mt-[100px] xl:mt-[150px] relative isolate"
+    >
       <div className="absolute rounded-full top-[55%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col gap-3 text-center">
         <HeadingComp sub="Roadmap" head="Development Roadmap" />
