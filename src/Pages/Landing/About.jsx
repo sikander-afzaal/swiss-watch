@@ -54,7 +54,7 @@ const About = () => {
   return (
     <div className="full  mt-[80px] xl:mt-[140px]">
       <div className="xl:flex-row flex-col section gap-[30px] xl:gap-[120px]">
-        <div className="w-full overflow-x-hidden flex justify-center items-center relative h-auto  min-h-[450px] xl:min-h-[600px]">
+        <div className="w-full xl:overflow-x-visible overflow-x-hidden flex justify-center items-center relative h-auto  min-h-[450px] xl:min-h-[600px]">
           <img
             src="/logo.png"
             className="xl:h-[75px] h-[43px] xl:w-[190px] w-[108px] object-contain"

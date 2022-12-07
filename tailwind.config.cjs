@@ -17,6 +17,9 @@ module.exports = {
       animation: {
         "spin-slow": "spin 6s linear infinite",
       },
+      boxShadow: {
+        blogShadow: "0px 48px 90px rgba(0, 0, 0, 0.48)",
+      },
     },
   },
   plugins: [],

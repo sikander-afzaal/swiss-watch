@@ -12,9 +12,9 @@ const Header = () => {
           className="fixed top-0 left-0 w-full h-full bg-[#000] opacity-70 z-[79]"
         ></div>
       )}
-      <header className="flex justify-between items-center w-full max-w-max p-5">
+      <header className="flex justify-between items-center w-full max-w-max px-5 h-[100px]">
         <img
-          className="h-[60px] lg:h-[86px] object-contain"
+          className="h-[60px] lg:h-[66px] object-contain"
           src="/logo.png"
           alt=""
         />

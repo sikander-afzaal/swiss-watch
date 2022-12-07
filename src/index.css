@@ -23,3 +23,32 @@ body {
   background-color: #04060f;
   overflow-x: hidden;
 }
+.slider-center li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-arrows .splide__arrows {
+  top: 115%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.slider-arrows .splide__arrows button {
+  position: static;
+}
+
+.slider-arrows .splide__arrow {
+  background-color: #47aaff;
+  width: 36px;
+  height: 36px;
+  opacity: 1;
+}
+.slider-arrows .splide__arrow svg {
+  fill: white;
+}
