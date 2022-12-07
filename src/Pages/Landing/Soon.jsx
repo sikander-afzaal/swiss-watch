@@ -1,0 +1,119 @@
+import Button from "../../Components/Button";
+import gsap from "gsap";
+import Flip from "gsap/Flip";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+
+const Soon = () => {
+  const [activeWatch, setActiveWatch] = useState(1);
+  const watch1 = useRef();
+  const watch2 = useRef();
+  const watch3 = useRef();
+  const page1 = useRef();
+  const page2 = useRef();
+  const page3 = useRef();
+  useEffect(() => {
+    gsap.registerPlugin(Flip);
+    const watchState = Flip.getState([
+      watch1.current,
+      watch2.current,
+      watch3.current,
+    ]);
+
+    [watch1.current, watch2.current, watch3.current].map((elem, idx) => {
+      if (idx === activeWatch - 1) {
+        elem.classList.remove("order-1");
+        elem.classList.remove("order-2");
+        elem.classList.remove("order-3");
+        elem.classList.add("watchActive");
+      } else {
+        elem.classList.remove("order-1");
+        elem.classList.remove("order-2");
+        elem.classList.remove("order-3");
+        elem.classList.remove("watchActive");
+
+        if (activeWatch === 1) {
+          watch3.current.classList.add("order-3");
+          watch2.current.classList.add("order-1");
+        } else if (activeWatch === 2) {
+          watch1.current.classList.add("order-1");
+          watch3.current.classList.add("order-3");
+        } else if (activeWatch === 3) {
+          watch1.current.classList.add("order-1");
+          watch2.current.classList.add("order-3");
+        }
+      }
+    });
+    Flip.from(watchState, {
+      duration: 1,
+      scale: true,
+      targets: [watch1.current, watch2.current, watch3.current],
+    });
+  }, [activeWatch]);
+
+  return (
+    <div className="full mt-[70px] xl:mt-[150px] bg-[rgba(255,255,255,0.06)] ">
+      <div className="section xl:flex-row flex-col gap-6 py-[70px] xl:py-[160px]">
+        <div className="flex w-full justify-center items-center xl:text-left text-center xl:items-start flex-col gap-3">
+          <h2 className=" text-blue font-bold sm:text-[64px] text-[36px] leading-[44px] sm:leading-[78px]">
+            Coming Soon
+          </h2>
+          <p className="text-white text-base sm:text-[22px] leading-[34px] xl:max-w-none max-w-[600px]">
+            Every buyer is automatically member of Swiss Crypto Watch Club.
+            Swiss Crypto Watch Club will offer special collections and other
+            amenities to their members.
+          </p>
+          <Button name={"Join Discord"} classes="mt-[20px] xl:mt-[60px]" />
+          {/* //pagination -------------------- */}
+          <div className="hidden xl:flex justify-start items-center gap-4 mt-[50px]">
+            <div
+              onClick={() => setActiveWatch(1)}
+              ref={page1}
+              className={`w-[48px] cursor-pointer h-[6px] ${
+                activeWatch === 1 ? "bg-blue" : "bg-white opacity-[0.36]"
+              } transition-all`}
+            ></div>
+            <div
+              onClick={() => setActiveWatch(2)}
+              ref={page2}
+              className={`w-[48px] cursor-pointer h-[6px] ${
+                activeWatch === 2 ? "bg-blue" : "bg-white opacity-[0.36]"
+              } transition-all`}
+            ></div>
+            <div
+              onClick={() => setActiveWatch(3)}
+              ref={page3}
+              className={`w-[48px] cursor-pointer h-[6px] ${
+                activeWatch === 3 ? "bg-blue" : "bg-white opacity-[0.36]"
+              } transition-all`}
+            ></div>
+          </div>
+        </div>
+        <div className="flex justify-center xl:mt-0 mt-[50px] items-center w-full ">
+          <img
+            ref={watch1}
+            onClick={() => setActiveWatch(1)}
+            src="/soon1.png"
+            className={`cursor-pointer  w-full max-w-[115px] xl:max-w-[210px] object-contain row-start-1 row-end-2`}
+            alt=""
+          />
+          <img
+            ref={watch2}
+            onClick={() => setActiveWatch(2)}
+            src="/soon2.png"
+            className={`cursor-pointer w-full max-w-[115px] xl:max-w-[210px] object-contain row-start-1 row-end-2 `}
+            alt=""
+          />
+          <img
+            ref={watch3}
+            onClick={() => setActiveWatch(3)}
+            src="/soon3.png"
+            alt=""
+            className={`cursor-pointer  w-full max-w-[115px] xl:max-w-[210px] object-contain row-start-1 row-end-2`}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Soon;

@@ -9,6 +9,9 @@
   .section {
     @apply max-w-max flex justify-center items-center w-full px-5;
   }
+  .watchActive {
+    @apply scale-[1.5] z-40 order-2 -mx-5;
+  }
 }
 * {
   margin: 0;
