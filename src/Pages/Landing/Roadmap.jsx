@@ -1,9 +1,40 @@
+import { useRef, useEffect } from "react";
 import HeadingComp from "../../Components/HeadingComp";
+import gsap from "gsap";
 
 const Roadmap = () => {
   const roadmapHeadStyles =
     "text-blue uppercase text-[24px] lg:text-[30px] leading-[24px] lg:leading-[30px] font-bold";
   const roadmapDescStyles = "text-sm lg:text-base text-white max-w-[306px]";
+  const line1 = useRef();
+  const line2 = useRef();
+  const line3 = useRef();
+  const line4 = useRef();
+  const line5 = useRef();
+  const line6 = useRef();
+
+  useEffect(() => {
+    const lineArray = [
+      line2.current,
+      line4.current,
+      line6.current,
+      line5.current,
+      line3.current,
+      line1.current,
+    ];
+    gsap.set(lineArray, { filter: "brightness(0.4)" });
+    gsap.fromTo(
+      lineArray,
+      { filter: "brightness(0.4)" },
+      {
+        filter: "brightness(2)",
+        stagger: 2,
+        repeat: -1,
+        duration: 0.8,
+      }
+    );
+  }, []);
+
   return (
     <div
       id="roadmap"
@@ -24,8 +55,9 @@ const Roadmap = () => {
               New monthly collections will be availble
             </p>
             <img
+              ref={line1}
               src="/line1.png"
-              className="absolute left-[110%] top-[10%] xl:block hidden"
+              className="absolute  left-[110%] top-[10%] xl:block hidden"
               alt=""
             />
           </div>
@@ -36,6 +68,7 @@ const Roadmap = () => {
               be used on Smart phones and Smart watches
             </p>{" "}
             <img
+              ref={line2}
               src="/line2.png"
               className="absolute   right-[110%] xl:block hidden top-[10%]"
               alt=""
@@ -49,6 +82,7 @@ const Roadmap = () => {
               New monthly collections will be availble
             </p>
             <img
+              ref={line3}
               src="/line3.png"
               className="absolute left-[110%]  top-[10%] xl:block hidden"
               alt=""
@@ -61,6 +95,7 @@ const Roadmap = () => {
               (SCWC ) will be tradable
             </p>{" "}
             <img
+              ref={line4}
               src="/line4.png"
               className="absolute   right-[110%] xl:block hidden top-[10%]"
               alt=""
@@ -74,6 +109,7 @@ const Roadmap = () => {
               New monthly collections will be availble
             </p>{" "}
             <img
+              ref={line5}
               src="/line5.png"
               className="absolute left-[110%] xl:block hidden bottom-[10%]"
               alt=""
@@ -86,6 +122,7 @@ const Roadmap = () => {
               Watch Coin (SCWC)
             </p>{" "}
             <img
+              ref={line6}
               src="/line6.png"
               className="absolute  right-[110%] xl:block hidden bottom-[10%]"
               alt=""

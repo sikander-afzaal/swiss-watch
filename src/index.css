@@ -10,7 +10,7 @@
     @apply max-w-max flex justify-center items-center w-full px-5;
   }
   .watchActive {
-    @apply scale-[1.5] z-40 order-2 -mx-5;
+    @apply z-40 order-2 -mx-14 xl:-mx-[100px] xl:max-w-[350px] max-w-[210px];
   }
 }
 * {
