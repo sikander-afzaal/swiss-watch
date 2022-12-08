@@ -114,7 +114,7 @@ const Soon = () => {
             ></div>
           </div>
         </div>
-        <div className="flex xl:min-h-[520px] min-h-[320px] justify-center xl:mt-0 mt-[50px] items-center w-full ">
+        <div className="flex  xl:min-h-[520px] min-h-[320px] justify-center xl:mt-0 mt-[50px] items-center w-full ">
           <img
             ref={watch1}
             onClick={() => setActiveWatch(1)}
