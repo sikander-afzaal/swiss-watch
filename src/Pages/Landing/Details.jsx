@@ -1,28 +1,7 @@
-// import { useEffect, useRef } from "react";
 import Button from "../../Components/Button";
 import HeadingComp from "../../Components/HeadingComp";
-// import gsap from "gsap";
 
 const Details = () => {
-  // const coin1 = useRef();
-  // const coin2 = useRef();
-  // useEffect(() => {
-  //   gsap.to(coin1.current, {
-  //     rotate: 360,
-  //     repeat: -1,
-  //     duration: 12,
-  //     repeatDelay: 0,
-  //     ease: "none",
-  //   });
-  //   gsap.to(coin2.current, {
-  //     rotate: -360,
-  //     repeat: -1,
-  //     duration: 12,
-  //     repeatDelay: 0,
-  //     ease: "none",
-  //   });
-  // }, []);
-
   return (
     <div className="full isolate relative mt-[80px] xl:mt-[120px]">
       <div className="absolute rounded-full top-[45%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
@@ -62,20 +41,6 @@ const Details = () => {
             className="max-w-[350px] sm:max-w-[500px] xl:max-w-[600px] object-contain w-full"
             alt=""
           />
-          {/* <div className="flex min-h-[300px]  justify-center items-center">
-            <img
-              ref={coin1}
-              src="/coin1.png"
-              className="max-w-[60%] -mr-[100px] xl:-mr-[230px] relative z-20 sm:max-w-[500px] xl:max-w-[400px] object-contain w-full"
-              alt=""
-            />
-            <img
-              ref={coin2}
-              src="/coin2.png"
-              className="max-w-[60%] sm:max-w-[500px] xl:max-w-[400px] object-contain w-full"
-              alt=""
-            />
-          </div> */}
         </div>
       </div>
     </div>
