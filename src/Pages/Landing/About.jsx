@@ -22,7 +22,7 @@ const About = () => {
       },
       ease: "none",
       repeat: -1,
-      duration: 44,
+      duration: 60,
     });
     gsap.to(img2.current, {
       motionPath: {
@@ -32,7 +32,7 @@ const About = () => {
         autoRotate: true,
       },
       ease: "none",
-      duration: 48,
+      duration: 68,
       repeat: -1,
     });
     gsap.to(img3.current, {
@@ -43,7 +43,7 @@ const About = () => {
         autoRotate: true,
       },
       ease: "none",
-      duration: 52,
+      duration: 75,
       repeat: -1,
     });
   }, []);
