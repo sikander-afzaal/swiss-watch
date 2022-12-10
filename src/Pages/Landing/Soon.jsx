@@ -53,7 +53,7 @@ const Soon = () => {
     });
   }, [activeWatch]);
   useEffect(() => {
-    setTimeout(() => {
+    const interval = setTimeout(() => {
       //autoplay functionality --------------
       const currentNum = activeWatch;
 
@@ -72,6 +72,9 @@ const Soon = () => {
           break;
       }
     }, 5000);
+    return () => {
+      clearTimeout(interval);
+    };
   }, [activeWatch]);
 
   return (
