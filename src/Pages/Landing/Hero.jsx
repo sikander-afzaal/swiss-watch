@@ -31,7 +31,7 @@ const Hero = () => {
       <h2 className="text-white font-extrabold 2xl:text-[180px] text-[140px] opacity-[0.04] leading-[1] -mb-[20px] xl:block hidden">
         CRYPTOWATCH
       </h2>
-      <div className="xl:m-0 mt-5 w-full relative ">
+      <div className="xl:m-0 mt-5 w-full relative isolate">
         <span className="absolute left-0 top-0 w-full h-full bg-blue -z-[2]"></span>
         <span className="absolute left-0 top-0 w-full h-full bg-black -z-[1] opacity-[0.18]"></span>
         <div className="w-full bg-blue overflow-hidden -rotate-[1.35deg] py-5 xl:py-[30px]">
