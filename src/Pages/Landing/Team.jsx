@@ -14,9 +14,9 @@ const Team = () => {
         </p>
         {window.innerWidth > 1280 ? (
           <div className="grid mt-[50px] grid-cols-3 w-full gap-6">
-            <TeamBox img="/team1.jpg" name="Ronald Grob" role="Founder" />
+            <TeamBox img="/team3.jpg" name="Ronald Grob" role="Founder" />
             <TeamBox img="/team2.jpg" name="Daniel Labhart" role="Consultant" />
-            <TeamBox img="/team3.jpg" name="Micha Kornmayer" role="Designer" />
+            <TeamBox img="/team1.jpg" name="Micha Kornmayer" role="Designer" />
           </div>
         ) : (
           <Splide
@@ -31,7 +31,7 @@ const Team = () => {
             className="slider-arrows slider-center mt-[30px]"
           >
             <SplideSlide>
-              <TeamBox img="/team1.jpg" name="Ronald Grob" role="Founder" />
+              <TeamBox img="/team3.jpg" name="Ronald Grob" role="Founder" />
             </SplideSlide>
             <SplideSlide>
               <TeamBox
@@ -42,7 +42,7 @@ const Team = () => {
             </SplideSlide>
             <SplideSlide>
               <TeamBox
-                img="/team3.jpg"
+                img="/team1.jpg"
                 name="Micha Kornmayer"
                 role="Designer"
               />
