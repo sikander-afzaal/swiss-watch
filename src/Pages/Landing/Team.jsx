@@ -14,9 +14,9 @@ const Team = () => {
         </p>
         {window.innerWidth > 1280 ? (
           <div className="grid mt-[50px] grid-cols-3 w-full gap-6">
-            <TeamBox img="/team1.png" name="Sandhya Mer" role="The leader" />
-            <TeamBox img="/team2.png" name="Sandhya Mer" role="The leader" />
-            <TeamBox img="/team3.png" name="Sandhya Mer" role="The leader" />
+            <TeamBox img="/team1.jpg" name="Ronald Grob" role="Founder" />
+            <TeamBox img="/team2.jpg" name="Daniel Labhart" role="Consultant" />
+            <TeamBox img="/team3.jpg" name="Micha Kornmayer" role="Designer" />
           </div>
         ) : (
           <Splide
@@ -31,13 +31,21 @@ const Team = () => {
             className="slider-arrows slider-center mt-[30px]"
           >
             <SplideSlide>
-              <TeamBox img="/team1.png" name="Sandhya Mer" role="The leader" />
+              <TeamBox img="/team1.jpg" name="Ronald Grob" role="Founder" />
             </SplideSlide>
             <SplideSlide>
-              <TeamBox img="/team2.png" name="Sandhya Mer" role="The leader" />
+              <TeamBox
+                img="/team2.jpg"
+                name="Daniel Labhart"
+                role="Consultant"
+              />
             </SplideSlide>
             <SplideSlide>
-              <TeamBox img="/team3.png" name="Sandhya Mer" role="The leader" />
+              <TeamBox
+                img="/team3.jpg"
+                name="Micha Kornmayer"
+                role="Designer"
+              />
             </SplideSlide>
           </Splide>
         )}
@@ -50,8 +58,12 @@ export default Team;
 
 const TeamBox = ({ img, name, role }) => {
   return (
-    <div className="flex justify-start max-w-[460px] items-center flex-col xl:pb-5 pb-8 p-5 gap-5 bg-[rgba(255,255,255,0.04)] rounded-[36px] min-h-0 xl:min-h-[484px] h-full">
-      <img src={img} className="w-full object-contain" alt="" />
+    <div className="flex justify-start max-w-[460px] items-center flex-col xl:pb-5 pb-8 p-5 gap-5 bg-[rgba(255,255,255,0.04)] rounded-[36px] min-h-0 xl:min-h-[434px] h-full">
+      <img
+        src={img}
+        className="w-full rounded-[30px] h-[250px] object-cover"
+        alt=""
+      />
       <h3 className="text-white mt-5 uppercase font-bold text-[30px] leading-[30px]">
         {name}
       </h3>
