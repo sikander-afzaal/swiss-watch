@@ -10,11 +10,16 @@ const Details = () => {
         <div className="flex justify-center xl:flex-row flex-col items-center gap-[50px] xl:gap-[100px] ">
           <img
             src="/usability.png"
-            className="max-w-[350px] sm:max-w-[500px] xl:max-w-[600px] object-contain w-full"
+            className="max-w-[350px] xl:block hidden sm:max-w-[500px] xl:max-w-[600px] object-contain w-full"
             alt=""
           />
           <div className="flex justify-center items-center text-center xl:text-left xl:items-start flex-col gap-[15px]">
             <HeadingComp sub="Usability" head="Usability" />
+            <img
+              src="/usability.png"
+              className="max-w-[350px] xl:hidden block sm:max-w-[500px] xl:max-w-[600px] object-contain w-full"
+              alt=""
+            />
             <p className="text-white text-base sm:text-[20px] leading-[30px] xl:max-w-none max-w-[600px]">
               Swiss Crypto Watches can be used on NFT frames, on Smart phones
               and Smart watches.
@@ -29,6 +34,11 @@ const Details = () => {
         <div className="flex  justify-center xl:flex-row flex-col-reverse items-center gap-[0px] xl:gap-[100px] ">
           <div className="flex justify-center items-center text-center xl:text-left xl:items-start flex-col gap-[15px]">
             <HeadingComp sub="Coin" head="Swiss Crypto Watch Coin (SCWC)" />
+            <img
+              src="/coin.png"
+              className="max-w-[350px] xl:hidden block sm:max-w-[500px] xl:max-w-[600px] object-contain w-full"
+              alt=""
+            />
             <p className="text-white text-base sm:text-[20px] leading-[30px] xl:max-w-none max-w-[600px]">
               Swiss Crypto Watch Coin will be tradable in early 2023, followed
               by a dedicated strictly limited watch collection only payable with
@@ -38,7 +48,7 @@ const Details = () => {
           </div>{" "}
           <img
             src="/coin.png"
-            className="max-w-[350px] sm:max-w-[500px] xl:max-w-[600px] object-contain w-full"
+            className="max-w-[350px] xl:block hidden sm:max-w-[500px] xl:max-w-[600px] object-contain w-full"
             alt=""
           />
         </div>

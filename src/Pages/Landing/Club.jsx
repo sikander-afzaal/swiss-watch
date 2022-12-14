@@ -11,6 +11,11 @@ const Club = () => {
             sub="Swiss Cryptowatch Club"
             head="Welcome to Swiss Cryptowatch Club (SCWC)"
           />
+          <img
+            src="/club.png"
+            className="max-w-[500px] xl:hidden block xl:max-w-[600px] object-contain w-full"
+            alt=""
+          />
           <p className="text-white text-base sm:text-[20px] leading-[30px] xl:max-w-none max-w-[600px]">
             Every buyer is automatically member of Swiss Crypto Watch Club.
             Swiss Crypto Watch Club will offer special collections and other
@@ -20,7 +25,7 @@ const Club = () => {
         </div>{" "}
         <img
           src="/club.png"
-          className="max-w-[500px] xl:max-w-[600px] object-contain w-full"
+          className="max-w-[500px] xl:block hidden   xl:max-w-[600px] object-contain w-full"
           alt=""
         />
       </div>

@@ -8,11 +8,18 @@ const Hero = () => {
     "font-bold text-[24px] xl:text-[42px] text-white flex justify-center items-center uppercase leading-[24px] xl:leading-[1] gap-5 w-full xl:gap-[50px]";
   return (
     <div id="home" className="full bg-hero">
-      <section className=" section items-center   xl:items-start pt-[130px] flex-col xl:flex-row xl:gap-0 gap-[40px]  xl:pt-[120px]">
+      <section className=" section items-center  xl:items-start pt-[130px] flex-col xl:flex-row xl:gap-0 gap-[40px]  xl:pt-[120px]">
         <div className="flex items-center text-center xl:text-left gap-[10px] justify-center xl:items-start flex-col xl:gap-[30px]">
           <h2 className="font-bold text-[36px] xl:text-[64px] xl:leading-[78px] leading-[44px] text-white">
             Welcome To <span className="text-blue">Swiss Cryptowatch Club</span>
           </h2>
+          <div className="xl:hidden block">
+            <img
+              className="max-w-[500px]  xl:max-w-[840px] w-full object-contain"
+              src="/hero.png"
+              alt=""
+            />
+          </div>
           <p className="text-white text-base xl:text-[22px] leading-[34px] max-w-[615px]">
             Every buyer is automatically member of Swiss Crypto Watch Club.
             Swiss Crypto Watch Club will offer special collections and other
@@ -20,9 +27,9 @@ const Hero = () => {
           </p>
           <Button classes={"mt-[30px] xl:mt-[50px]"} name="JOIN DISCORD" />
         </div>
-        <div>
+        <div className="xl:block hidden">
           <img
-            className="max-w-[500px] xl:max-w-[840px] w-full object-contain"
+            className="max-w-[500px]  xl:max-w-[840px] w-full object-contain"
             src="/hero.png"
             alt=""
           />
@@ -31,7 +38,7 @@ const Hero = () => {
       <h2 className="text-white font-extrabold 2xl:text-[180px] text-[140px] opacity-[0.04] leading-[1] -mb-[20px] xl:block hidden">
         CRYPTOWATCH
       </h2>
-      <div className="xl:m-0 mt-5 w-full relative isolate">
+      <div className="xl:m-0 mt-8 w-full relative isolate">
         <span className="absolute left-0 top-0 w-full h-full bg-blue -z-[2]"></span>
         <span className="absolute left-0 top-0 w-full h-full bg-black -z-[1] opacity-[0.18]"></span>
         <div className="w-full bg-blue overflow-hidden -rotate-[1.35deg] py-5 xl:py-[30px]">

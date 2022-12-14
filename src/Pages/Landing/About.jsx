@@ -8,51 +8,93 @@ const About = () => {
   const path1 = useRef();
   const path2 = useRef();
   const path3 = useRef();
+  const path1Desk = useRef();
+  const path2Desk = useRef();
+  const path3Desk = useRef();
   const img1 = useRef();
   const img2 = useRef();
   const img3 = useRef();
+  const img1Desk = useRef();
+  const img2Desk = useRef();
+  const img3Desk = useRef();
   useEffect(() => {
     gsap.registerPlugin(MotionPathPlugin);
-    gsap.to(img1.current, {
-      motionPath: {
-        path: path1.current,
-        align: path1.current,
-        alignOrigin: [0.5, 0.5],
-        autoRotate: true,
-      },
-      ease: "none",
-      repeat: -1,
-      duration: 20,
-    });
-    gsap.to(img2.current, {
-      motionPath: {
-        path: path2.current,
-        align: path2.current,
-        alignOrigin: [0.5, 0.5],
-        autoRotate: true,
-      },
-      ease: "none",
-      duration: 60,
-      repeat: -1,
-    });
-    gsap.to(img3.current, {
-      motionPath: {
-        path: path3.current,
-        align: path3.current,
-        alignOrigin: [0.5, 0.5],
-        autoRotate: true,
-      },
-      ease: "none",
-      duration: 180,
-      repeat: -1,
-    });
+    if (window.innerWidth > 1280) {
+      gsap.to(img1Desk.current, {
+        motionPath: {
+          path: path1Desk.current,
+          align: path1Desk.current,
+          alignOrigin: [0.5, 0.5],
+          autoRotate: true,
+        },
+        ease: "none",
+        repeat: -1,
+        duration: 20,
+      });
+      gsap.to(img2Desk.current, {
+        motionPath: {
+          path: path2Desk.current,
+          align: path2Desk.current,
+          alignOrigin: [0.5, 0.5],
+          autoRotate: true,
+        },
+        ease: "none",
+        duration: 60,
+        repeat: -1,
+      });
+      gsap.to(img3Desk.current, {
+        motionPath: {
+          path: path3Desk.current,
+          align: path3Desk.current,
+          alignOrigin: [0.5, 0.5],
+          autoRotate: true,
+        },
+        ease: "none",
+        duration: 180,
+        repeat: -1,
+      });
+    } else {
+      gsap.to(img1.current, {
+        motionPath: {
+          path: path1.current,
+          align: path1.current,
+          alignOrigin: [0.5, 0.5],
+          autoRotate: true,
+        },
+        ease: "none",
+        repeat: -1,
+        duration: 20,
+      });
+      gsap.to(img2.current, {
+        motionPath: {
+          path: path2.current,
+          align: path2.current,
+          alignOrigin: [0.5, 0.5],
+          autoRotate: true,
+        },
+        ease: "none",
+        duration: 60,
+        repeat: -1,
+      });
+      gsap.to(img3.current, {
+        motionPath: {
+          path: path3.current,
+          align: path3.current,
+          alignOrigin: [0.5, 0.5],
+          autoRotate: true,
+        },
+        ease: "none",
+        duration: 180,
+        repeat: -1,
+      });
+    }
   }, []);
 
   return (
     <div id="about" className="full isolate relative  mt-[80px] xl:mt-[140px]">
       <div className="absolute rounded-full -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px] right-[0%] w-[700px] h-[700px]"></div>
       <div className="xl:flex-row flex-col section gap-[30px] xl:gap-[120px]">
-        <div className="w-full xl:overflow-x-visible overflow-x-hidden flex justify-center items-center relative h-auto  min-h-[450px] xl:min-h-[600px]">
+        <div className="w-full xl:flex hidden xl:overflow-x-visible overflow-x-hidden  justify-center items-center relative h-auto  min-h-[450px] xl:min-h-[600px]">
           <img
             src="/logo.png"
             className="xl:h-[75px] h-[43px] xl:w-[190px] w-[108px] object-contain"
@@ -61,39 +103,99 @@ const About = () => {
           <img
             className="absolute z-30 xl:max-w-none max-w-[45px]"
             src="/about2.png"
-            ref={img1}
+            ref={img1Desk}
             alt=""
           />
           <img
             className="absolute z-20 xl:max-w-none max-w-[63px]"
             src="/about3.png "
-            ref={img2}
+            ref={img2Desk}
             alt=""
           />
           <img
             className="absolute z-10 xl:max-w-none max-w-[80px]"
             src="/about1.png"
-            ref={img3}
+            ref={img3Desk}
             alt=""
           />
-          {window.innerWidth > 1280 ? (
-            <svg
-              width="257"
-              height="257"
-              viewBox="0 0 257 257"
-              fill="none"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                ref={path1}
-                opacity="0.24"
-                d="M255.365 128.2C255.365 198.451 198.423 255.401 128.182 255.401C57.9418 255.401 1.00024 198.451 1.00024 128.2C1.00024 57.9494 57.9418 1 128.182 1C198.423 1 255.365 57.9494 255.365 128.2Z"
-                stroke="white"
-                strokeWidth="2"
-              />
-            </svg>
-          ) : (
+          <svg
+            width="257"
+            height="257"
+            viewBox="0 0 257 257"
+            fill="none"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              ref={path1Desk}
+              opacity="0.24"
+              d="M255.365 128.2C255.365 198.451 198.423 255.401 128.182 255.401C57.9418 255.401 1.00024 198.451 1.00024 128.2C1.00024 57.9494 57.9418 1 128.182 1C198.423 1 255.365 57.9494 255.365 128.2Z"
+              stroke="white"
+              strokeWidth="2"
+            />
+          </svg>
+
+          <svg
+            width="436"
+            height="438"
+            viewBox="0 0 436 438"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            <path
+              ref={path2Desk}
+              opacity="0.24"
+              d="M434.547 219C434.547 338.851 337.585 436.006 217.981 436.006C98.3765 436.006 1.41455 338.851 1.41455 219C1.41455 99.1491 98.3765 1.99414 217.981 1.99414C337.585 1.99414 434.547 99.1491 434.547 219Z"
+              stroke="white"
+              strokeWidth="2"
+            />
+          </svg>
+
+          <svg
+            width="581"
+            height="582"
+            viewBox="0 0 581 582"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            <path
+              ref={path3Desk}
+              opacity="0.24"
+              d="M580 291C580 450.659 450.589 580.089 290.953 580.089C131.317 580.089 1.90576 450.659 1.90576 291C1.90576 131.341 131.317 1.91162 290.953 1.91162C450.589 1.91162 580 131.341 580 291Z"
+              stroke="white"
+              strokeWidth="2"
+            />
+          </svg>
+        </div>
+        <div className="flex sm:text-left w-full justify-start items-center sm:items-start text-center flex-col gap-[15px]">
+          <HeadingComp sub="SCWC" head="Welcome to Swiss Cryptowatch Club" />
+          <div className="w-full xl:hidden flex xl:overflow-x-visible overflow-x-hidden  justify-center items-center relative h-auto  min-h-[450px] xl:min-h-[600px]">
+            <img
+              src="/logo.png"
+              className="xl:h-[75px] h-[43px] xl:w-[190px] w-[108px] object-contain"
+              alt=""
+            />
+            <img
+              className="absolute z-30 xl:max-w-none max-w-[45px]"
+              src="/about2.png"
+              ref={img1}
+              alt=""
+            />
+            <img
+              className="absolute z-20 xl:max-w-none max-w-[63px]"
+              src="/about3.png "
+              ref={img2}
+              alt=""
+            />
+            <img
+              className="absolute z-10 xl:max-w-none max-w-[80px]"
+              src="/about1.png"
+              ref={img3}
+              alt=""
+            />
+
             <svg
               width="149"
               className="absolute  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -110,25 +212,7 @@ const About = () => {
                 stroke-width="2"
               />
             </svg>
-          )}
-          {window.innerWidth > 1280 ? (
-            <svg
-              width="436"
-              height="438"
-              viewBox="0 0 436 438"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              <path
-                ref={path2}
-                opacity="0.24"
-                d="M434.547 219C434.547 338.851 337.585 436.006 217.981 436.006C98.3765 436.006 1.41455 338.851 1.41455 219C1.41455 99.1491 98.3765 1.99414 217.981 1.99414C337.585 1.99414 434.547 99.1491 434.547 219Z"
-                stroke="white"
-                strokeWidth="2"
-              />
-            </svg>
-          ) : (
+
             <svg
               width="251"
               height="252"
@@ -145,25 +229,7 @@ const About = () => {
                 stroke-width="2"
               />
             </svg>
-          )}
-          {window.innerWidth > 1280 ? (
-            <svg
-              width="581"
-              height="582"
-              viewBox="0 0 581 582"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              <path
-                ref={path3}
-                opacity="0.24"
-                d="M580 291C580 450.659 450.589 580.089 290.953 580.089C131.317 580.089 1.90576 450.659 1.90576 291C1.90576 131.341 131.317 1.91162 290.953 1.91162C450.589 1.91162 580 131.341 580 291Z"
-                stroke="white"
-                strokeWidth="2"
-              />
-            </svg>
-          ) : (
+
             <svg
               width="334"
               height="334"
@@ -180,10 +246,7 @@ const About = () => {
                 stroke-width="2"
               />
             </svg>
-          )}
-        </div>
-        <div className="flex sm:text-left w-full justify-start items-center sm:items-start text-center flex-col gap-[15px]">
-          <HeadingComp sub="SCWC" head="Welcome to Swiss Cryptowatch Club" />
+          </div>
           <p className="text-white text-base sm:text-[20px] leading-[30px]">
             Swiss Crypto Watch Coin will be tradable in early 2023, followed by
             a dedicated strictly limited watch collection only payable with the

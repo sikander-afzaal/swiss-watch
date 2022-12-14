@@ -86,6 +86,33 @@ const Soon = () => {
           <h2 className=" text-blue font-bold sm:text-[64px] text-[36px] leading-[44px] sm:leading-[78px]">
             Coming Soon
           </h2>
+          {window.innerWidth < 1280 ? (
+            <div className="flex  xl:min-h-[520px] min-h-[320px] justify-center xl:mt-0 mt-[50px] items-center w-full ">
+              <img
+                ref={watch1}
+                onClick={() => setActiveWatch(1)}
+                src="/soon1.png"
+                className={`cursor-pointer  w-full  object-contain row-start-1 row-end-2`}
+                alt=""
+              />
+              <img
+                ref={watch2}
+                onClick={() => setActiveWatch(2)}
+                src="/soon2.png"
+                className={`cursor-pointer w-full  object-contain row-start-1 row-end-2 `}
+                alt=""
+              />
+              <img
+                ref={watch3}
+                onClick={() => setActiveWatch(3)}
+                src="/soon3.png"
+                alt=""
+                className={`cursor-pointer  w-full  object-contain row-start-1 row-end-2`}
+              />
+            </div>
+          ) : (
+            ""
+          )}
           <p className="text-white text-base sm:text-[22px] leading-[34px] xl:max-w-none max-w-[600px]">
             Every buyer is automatically member of Swiss Crypto Watch Club.
             Swiss Crypto Watch Club will offer special collections and other
@@ -117,29 +144,33 @@ const Soon = () => {
             ></div>
           </div>
         </div>
-        <div className="flex  xl:min-h-[520px] min-h-[320px] justify-center xl:mt-0 mt-[50px] items-center w-full ">
-          <img
-            ref={watch1}
-            onClick={() => setActiveWatch(1)}
-            src="/soon1.png"
-            className={`cursor-pointer  w-full  object-contain row-start-1 row-end-2`}
-            alt=""
-          />
-          <img
-            ref={watch2}
-            onClick={() => setActiveWatch(2)}
-            src="/soon2.png"
-            className={`cursor-pointer w-full  object-contain row-start-1 row-end-2 `}
-            alt=""
-          />
-          <img
-            ref={watch3}
-            onClick={() => setActiveWatch(3)}
-            src="/soon3.png"
-            alt=""
-            className={`cursor-pointer  w-full  object-contain row-start-1 row-end-2`}
-          />
-        </div>
+        {window.innerWidth >= 1280 ? (
+          <div className="flex  xl:min-h-[520px] min-h-[320px] justify-center xl:mt-0 mt-[50px] items-center w-full ">
+            <img
+              ref={watch1}
+              onClick={() => setActiveWatch(1)}
+              src="/soon1.png"
+              className={`cursor-pointer  w-full  object-contain row-start-1 row-end-2`}
+              alt=""
+            />
+            <img
+              ref={watch2}
+              onClick={() => setActiveWatch(2)}
+              src="/soon2.png"
+              className={`cursor-pointer w-full  object-contain row-start-1 row-end-2 `}
+              alt=""
+            />
+            <img
+              ref={watch3}
+              onClick={() => setActiveWatch(3)}
+              src="/soon3.png"
+              alt=""
+              className={`cursor-pointer  w-full  object-contain row-start-1 row-end-2`}
+            />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
