@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import HeadingComp from "../../Components/HeadingComp";
 
 const Roadmap = () => {
@@ -14,8 +15,12 @@ const Roadmap = () => {
   const line4 = useRef();
   const line5 = useRef();
   const line6 = useRef();
+  const mobileLine = useRef();
+  const container = useRef();
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    //desktip animation
     const lineArray = [
       line2.current,
       line4.current,
@@ -36,10 +41,21 @@ const Roadmap = () => {
           duration: 0.8,
         }
       );
+    } else {
+      //mobile animation -------------
+      gsap.to(mobileLine.current, {
+        scrollTrigger: {
+          trigger: container.current,
+          start: "20% 20%",
+          scrub: 2,
+        },
+        height: "100%",
+      });
     }
   }, []);
   return (
     <div
+      ref={container}
       id="roadmap"
       className="full mt-[100px] xl:mt-[150px] relative isolate"
     >
@@ -140,9 +156,16 @@ const Roadmap = () => {
             />
           </div>
         ) : (
-          <div className="grid self-start sm:self-center w-max xl:gap-y-0 gap-y-[40px] gap-x-[30px] xl:gap-x-[50px] isolate  relative grid-cols-[auto__1fr] xl:grid-cols-6 xl:w-full  grid-rows-6 xl:grid-rows-1 mt-[40px] xl:mt-[80px]">
-            <div className="static row-start-1 row-end-7 xl:absolute left-0 top-5 -z-10 xl:w-full w-[6px] h-full xl:h-[6px] bg-white opacity-[0.12]"></div>
-            <div className="xl:text-center text-left flex justify-start items-start relative xl:items-center flex-col gap-4">
+          <div className="grid self-start sm:self-center w-max xl:gap-y-0 gap-y-[0px] gap-x-[30px] xl:gap-x-[50px] isolate  relative grid-cols-[auto__1fr] xl:grid-cols-6 xl:w-full  grid-rows-6 xl:grid-rows-1 mt-[40px] xl:mt-[80px]">
+            {/* left line roadmap ---------- */}
+            <div className="relative row-start-1 row-end-7 xl:absolute left-0 top-5 -z-10 xl:w-full w-[6px] h-full xl:h-[6px] bg-[rgba(255,255,255,0.12)] overflow-hidden">
+              <div
+                ref={mobileLine}
+                className="absolute left-0 top-0 w-full h-0 z-20 bg-[rgba(255,255,255,0.8)]"
+              ></div>
+            </div>
+            {/* left line roadmap ---------- */}
+            <div className="xl:text-center xl:mb-0 mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>Dec 2022</h3>
               <p className={roadmapDescStyles}>
@@ -150,7 +173,7 @@ const Roadmap = () => {
                 can be used on Smart phones and Smart watches
               </p>
             </div>
-            <div className="xl:text-center text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
+            <div className="xl:text-center xl:mb-0 mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 q1</h3>
               <p className={roadmapDescStyles}>
@@ -158,7 +181,7 @@ const Roadmap = () => {
               </p>
             </div>
 
-            <div className="xl:text-center text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
+            <div className="xl:text-center xl:mb-0 mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 Q2</h3>
               <p className={roadmapDescStyles}>
@@ -166,14 +189,14 @@ const Roadmap = () => {
                 Crypto Watch Coin (SCWC)
               </p>
             </div>
-            <div className="xl:text-center text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
+            <div className="xl:text-center xl:mb-0 mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 q4</h3>
               <p className={roadmapDescStyles}>
                 New monthly collections will be availble
               </p>
             </div>
-            <div className="xl:text-center text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
+            <div className="xl:text-center xl:mb-0 mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 Q2</h3>
               <p className={roadmapDescStyles}>
