@@ -156,7 +156,7 @@ const Roadmap = () => {
             />
           </div>
         ) : (
-          <div className="grid self-start sm:self-center w-max xl:gap-y-0 gap-y-[0px] gap-x-[30px] xl:gap-x-[50px] isolate  relative grid-cols-[auto__1fr] xl:grid-cols-6 xl:w-full  grid-rows-6 xl:grid-rows-1 mt-[40px] xl:mt-[80px]">
+          <div className="grid self-start sm:self-center h-full w-max xl:gap-y-0 gap-y-[0px] gap-x-[30px] xl:gap-x-[50px] isolate  relative grid-cols-[auto__1fr] xl:grid-cols-6 xl:w-full  grid-rows-6 xl:grid-rows-1 mt-[40px] xl:mt-[80px]">
             {/* left line roadmap ---------- */}
             <div className="relative row-start-1 row-end-7 xl:absolute left-0 top-5 -z-10 xl:w-full w-[6px] h-full xl:h-[6px] bg-[rgba(255,255,255,0.12)] overflow-hidden">
               <div
@@ -165,7 +165,7 @@ const Roadmap = () => {
               ></div>
             </div>
             {/* left line roadmap ---------- */}
-            <div className="xl:text-center xl:mb-0 mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4">
+            <div className="xl:text-center xl:mb-0 xl:h-auto h-[140px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>Dec 2022</h3>
               <p className={roadmapDescStyles}>
@@ -173,7 +173,7 @@ const Roadmap = () => {
                 can be used on Smart phones and Smart watches
               </p>
             </div>
-            <div className="xl:text-center xl:mb-0 mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
+            <div className="xl:text-center xl:mb-0 xl:h-auto h-[140px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 q1</h3>
               <p className={roadmapDescStyles}>
@@ -181,7 +181,7 @@ const Roadmap = () => {
               </p>
             </div>
 
-            <div className="xl:text-center xl:mb-0 mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
+            <div className="xl:text-center xl:mb-0 xl:h-auto h-[140px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 Q2</h3>
               <p className={roadmapDescStyles}>
@@ -189,14 +189,14 @@ const Roadmap = () => {
                 Crypto Watch Coin (SCWC)
               </p>
             </div>
-            <div className="xl:text-center xl:mb-0 mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
+            <div className="xl:text-center xl:mb-0 xl:h-auto h-[140px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 q4</h3>
               <p className={roadmapDescStyles}>
                 New monthly collections will be availble
               </p>
             </div>
-            <div className="xl:text-center xl:mb-0 mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
+            <div className="xl:text-center xl:mb-0 xl:h-auto h-[140px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 Q2</h3>
               <p className={roadmapDescStyles}>
