@@ -2,6 +2,7 @@ import About from "./About";
 import Blogs from "./Blogs";
 import Club from "./Club";
 import Collection from "./Collection";
+import Contact from "./Contact";
 import Details from "./Details";
 import Faq from "./Faq";
 import Hero from "./Hero";
@@ -25,6 +26,7 @@ const Landing = () => {
       <Team />
       <Blogs />
       <Faq />
+      <Contact />
       <Subscribe />
     </div>
   );
