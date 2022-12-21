@@ -9,8 +9,11 @@
   .section {
     @apply max-w-max flex justify-center items-center w-full px-5;
   }
-  .watchActive {
-    @apply z-40 order-2 -mx-14 xl:-mx-[100px] xl:max-w-[350px] max-w-[210px];
+  .activeWatch {
+    @apply left-[20%]  w-[300px] z-20;
+  }
+  .activeWatchMob {
+    @apply left-[27%] w-[160px] z-20;
   }
 }
 * {
