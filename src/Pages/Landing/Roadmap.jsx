@@ -30,12 +30,12 @@ const Roadmap = () => {
       line1.current,
     ];
     if (window.innerWidth > 1280) {
-      gsap.set(lineArray, { filter: "brightness(0.4)" });
+      gsap.set(lineArray, { filter: "brightness(0) invert(1)" });
       gsap.fromTo(
         lineArray,
-        { filter: "brightness(0.4)" },
+        { filter: "brightness(0.4) invert(1)" },
         {
-          filter: "brightness(2)",
+          filter: "brightness(1) invert(0)",
           stagger: 2,
           repeat: -1,
           duration: 0.8,

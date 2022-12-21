@@ -52,7 +52,7 @@ export default Team;
 
 const TeamBox = ({ img, name, role }) => {
   return (
-    <div className="flex justify-start max-w-[460px] items-center flex-col xl:pb-5 pb-8 p-5 gap-5 bg-[rgba(255,255,255,0.04)] rounded-[36px] min-h-0 xl:min-h-[434px] h-full">
+    <div className="flex justify-start max-w-[460px] max-h-[450px] items-center flex-col xl:pb-5 pb-8 p-5 gap-5 bg-[rgba(255,255,255,0.04)] rounded-[36px] min-h-0 xl:min-h-[434px] h-full">
       <img
         src={img}
         className="w-full rounded-[30px] h-[250px] object-cover"
