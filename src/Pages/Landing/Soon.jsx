@@ -235,6 +235,7 @@ const Soon = () => {
             ></div>
           </div>
         </div>
+        {/* //desktop watches -------------------------- */}
         {window.innerWidth >= 1280 ? (
           <div className="flex max-w-[550px]     isolate relative  min-h-[450px] justify-center  items-center w-full ">
             <img
@@ -261,14 +262,14 @@ const Soon = () => {
             <img
               ref={watch4}
               onClick={() => setActiveWatch(4)}
-              src="/soon3.png"
+              src="/soon4.png"
               alt=""
               className={`cursor-pointer    top-1/2 -translate-y-1/2 absolute   object-contain `}
             />
             <img
               ref={watch5}
               onClick={() => setActiveWatch(5)}
-              src="/soon3.png"
+              src="/soon5.png"
               alt=""
               className={`cursor-pointer    top-1/2 -translate-y-1/2 object-contain absolute  `}
             />
