@@ -36,6 +36,7 @@ const Soon = () => {
       );
       filteredArray__After__Old__Active__State.forEach((elem, idx) => {
         elem.classList.remove("w-[206px]");
+        elem.classList.remove("h-[300px]");
         elem.classList.remove("left-[0%]");
         elem.classList.remove("-z-[20]");
         elem.classList.remove("-z-[10]");
@@ -55,6 +56,7 @@ const Soon = () => {
       );
       filteredArray__After__New__Active__State.forEach((elem, idx) => {
         elem.classList.add("w-[206px]");
+        elem.classList.add("h-[300px]");
         if (idx === 0) {
           elem.classList.add("left-[0%]");
           elem.classList.add("-z-[20]");
