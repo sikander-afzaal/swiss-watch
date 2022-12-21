@@ -1,6 +1,8 @@
 import HeadingComp from "../../Components/HeadingComp";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Team = () => {
   return (
@@ -14,9 +16,9 @@ const Team = () => {
         </p>
         {window.innerWidth > 1280 ? (
           <div className="grid mt-[50px] grid-cols-3 w-full gap-6">
-            <TeamBox img="/team3.jpg" name="Ronald Grob" role="Founder" />
-            <TeamBox img="/team2.jpg" name="Daniel Labhart" role="Consultant" />
-            <TeamBox img="/team1.jpg" name="Micha Kornmayer" role="Designer" />
+            <TeamBox img="/team3.jpg" name="Ronald" role="Founder" />
+            <TeamBox img="/team2.jpg" name="Daniel" role="Consultant" />
+            <TeamBox img="/team1.jpg" name="Micha" role="Designer" />
           </div>
         ) : (
           <Splide
@@ -31,21 +33,13 @@ const Team = () => {
             className="slider-arrows slider-center mt-[30px]"
           >
             <SplideSlide>
-              <TeamBox img="/team3.jpg" name="Ronald Grob" role="Founder" />
+              <TeamBox img="/team3.jpg" name="Ronald" role="Founder" />
             </SplideSlide>
             <SplideSlide>
-              <TeamBox
-                img="/team2.jpg"
-                name="Daniel Labhart"
-                role="Consultant"
-              />
+              <TeamBox img="/team2.jpg" name="Daniel" role="Consultant" />
             </SplideSlide>
             <SplideSlide>
-              <TeamBox
-                img="/team1.jpg"
-                name="Micha Kornmayer"
-                role="Designer"
-              />
+              <TeamBox img="/team1.jpg" name="Micha" role="Designer" />
             </SplideSlide>
           </Splide>
         )}
@@ -70,6 +64,15 @@ const TeamBox = ({ img, name, role }) => {
       <p className="text-blue uppercase font-medium text-lg leading-[18px]">
         {role}
       </p>
+      <div className="flex justify-center items-center gap-2">
+        <a
+          href="#"
+          target={"blank"}
+          className="no-underline text-blue text-2xl"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+      </div>
     </div>
   );
 };

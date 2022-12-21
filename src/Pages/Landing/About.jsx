@@ -258,7 +258,7 @@ const About = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat
           </p>
-          <Button name="Learn more" classes="mt-[30px]" />
+          <Button name="Join Discord" classes="mt-[30px]" />
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import Button from "../../Components/Button";
+// import Button from "../../Components/Button";
 import HeadingComp from "../../Components/HeadingComp";
 
 const Details = () => {
@@ -28,7 +28,7 @@ const Details = () => {
               They will show exact local time on the devices. (Air Drop,
               available in Q1 2023)
             </p>
-            <Button name="Learn More" classes="mt-5" />
+            {/* <Button name="Learn More" classes="mt-5" /> */}
           </div>{" "}
         </div>
         <div className="flex  justify-center xl:flex-row flex-col-reverse items-center gap-[0px] xl:gap-[100px] ">
@@ -44,7 +44,7 @@ const Details = () => {
               by a dedicated strictly limited watch collection only payable with
               the Co.
             </p>
-            <Button name="Learn More" classes="mt-5" />
+            {/* <Button name="Learn More" classes="mt-5" /> */}
           </div>{" "}
           <img
             src="/coin.png"

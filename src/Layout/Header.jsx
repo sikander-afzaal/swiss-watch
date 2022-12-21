@@ -2,9 +2,10 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
-  faTelegramPlane,
   faYoutube,
-  faRedditAlien,
+  faInstagram,
+  faDiscord,
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
@@ -19,11 +20,13 @@ const Header = () => {
         ></div>
       )}
       <header className="flex justify-between items-center w-full max-w-max px-5 h-[100px]">
-        <img
-          className="h-[60px] lg:h-[66px] object-contain"
-          src="/logo.png"
-          alt=""
-        />
+        <a href="#home">
+          <img
+            className="h-[60px] lg:h-[66px] object-contain"
+            src="/logo.png"
+            alt=""
+          />
+        </a>
         <div
           className={`w-full flex lg:justify-between lg:items-center lg:static fixed top-0 flex-col lg:flex-row lg:max-w-none sm:max-w-[400px] items-center max-w-full sm:items-start justify-start gap-[40px] lg:gap-0 z-[80] lg:p-0 bg-black lg:bg-transparent h-full lg:h-auto transition-all  pt-[6rem] px-[2rem] ${
             headerToggle ? "right-0" : "-right-[800px]"
@@ -51,13 +54,7 @@ const Header = () => {
             >
               Roadmap
             </a>
-            <a
-              className={navlinkStyles}
-              onClick={() => setHeaderToggle(false)}
-              href="#sales"
-            >
-              Sales & Rewards
-            </a>
+
             <a
               className={navlinkStyles}
               onClick={() => setHeaderToggle(false)}
@@ -79,6 +76,13 @@ const Header = () => {
               className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
               target={"blank"}
             >
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a
+              href="#"
+              className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
+              target={"blank"}
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
             <a
@@ -86,14 +90,7 @@ const Header = () => {
               className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
               target={"blank"}
             >
-              <FontAwesomeIcon icon={faTelegramPlane} />
-            </a>
-            <a
-              href="#"
-              className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
-              target={"blank"}
-            >
-              <FontAwesomeIcon icon={faRedditAlien} />
+              <FontAwesomeIcon icon={faDiscord} />
             </a>
             <a
               href="#"
@@ -101,6 +98,13 @@ const Header = () => {
               target={"blank"}
             >
               <FontAwesomeIcon icon={faYoutube} />
+            </a>
+            <a
+              href="#"
+              className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
+              target={"blank"}
+            >
+              <FontAwesomeIcon icon={faFacebook} />
             </a>
           </div>
         </div>

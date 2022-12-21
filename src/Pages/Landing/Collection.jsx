@@ -9,7 +9,7 @@ const Collection = () => {
       <div className="absolute rounded-full top-[90%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col">
         <div className="flex gap-4 w-full max-w-[950px] justify-center items-center text-center flex-col">
-          <HeadingComp sub="SCWC" head="Swiss Crypto Watch Winter Collection" />
+          <HeadingComp head="Swiss Crypto Watch Winter Collection" />
           <p className="text-white text-base sm:text-[20px] leading-[30px]">
             The key that unlocks you into The Swiss Cryptowatch Club
           </p>

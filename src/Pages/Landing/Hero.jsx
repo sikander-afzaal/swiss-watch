@@ -5,13 +5,13 @@ import "@splidejs/react-splide/css";
 
 const Hero = () => {
   const marqueeTextStyles =
-    "font-bold text-[24px] xl:text-[42px] text-white flex justify-center items-center uppercase leading-[24px] xl:leading-[1] gap-5 w-full xl:gap-[50px]";
+    "font-bold text-[24px] xl:text-[42px] text-white flex justify-center items-center uppercase leading-[24px] xl:leading-[1] gap-5 w-full xl:gap-[20px]";
   return (
     <div id="home" className="full bg-hero">
       <section className=" section items-center  xl:items-start pt-[130px] flex-col xl:flex-row xl:gap-0 gap-[40px]  xl:pt-[120px]">
         <div className="flex items-center text-center xl:text-left gap-[10px] justify-center xl:items-start flex-col xl:gap-[30px]">
           <h2 className="font-bold text-[36px] xl:text-[64px] xl:leading-[78px] leading-[44px] text-white">
-            Welcome To <span className="text-blue">Swiss Cryptowatch Club</span>
+            Welcome To <span className="text-blue">Swiss Crypto Watches</span>
           </h2>
           <div className="xl:hidden block">
             <img
@@ -58,19 +58,31 @@ const Hero = () => {
           >
             <SplideSlide>
               <p className={marqueeTextStyles}>
-                <div className="bg-white w-[15px] h-[15px] rounded-full"></div>{" "}
+                <img
+                  src="/swiss-plus.png"
+                  className="w-[45px] h-[45px]"
+                  alt=""
+                />
                 Unisex Collection
               </p>
             </SplideSlide>
             <SplideSlide>
               <p className={marqueeTextStyles}>
-                <div className="bg-white w-[15px] h-[15px] rounded-full"></div>{" "}
+                <img
+                  src="/swiss-plus.png"
+                  className="w-[45px] h-[45px]"
+                  alt=""
+                />
                 Swiss Collection
               </p>
             </SplideSlide>
             <SplideSlide>
               <p className={marqueeTextStyles}>
-                <div className="bg-white w-[15px] h-[15px] rounded-full"></div>{" "}
+                <img
+                  src="/swiss-plus.png"
+                  className="w-[45px] h-[45px]"
+                  alt=""
+                />
                 Bespoke Collection
               </p>
             </SplideSlide>
