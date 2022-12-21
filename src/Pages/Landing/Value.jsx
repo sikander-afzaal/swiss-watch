@@ -11,7 +11,7 @@ const Value = () => {
             cillum dolore eu fugiat nulla pariatur.
           </p>
         </div>
-        <div className="grid mt-[40px] gap-8 xl:gap-4 place-items-center grid-cols-1 xl:grid-cols-3 w-full">
+        <div className="grid items-stretch mt-[40px] gap-8 xl:gap-4 place-items-center grid-cols-1 xl:grid-cols-3 w-full">
           <ValueBox
             head="Innovation"
             img="/val1.png"
@@ -37,7 +37,7 @@ export default Value;
 
 const ValueBox = ({ img, head, desc }) => {
   return (
-    <div className="flex h-full bg-[rgba(255,255,255,0.04)] max-w-[460px] rounded-[36px] justify-start text-center items-center flex-col w-full px-4 xl:px-5 py-[40px]">
+    <div className="flex  bg-[rgba(255,255,255,0.04)] max-w-[460px] rounded-[36px] justify-start text-center items-center flex-col w-full px-4 xl:px-5 py-[40px]">
       <img src={img} className="object-contain h-[72px]" alt="" />
       <h3 className="mt-5 text-white uppercase font-bold text-2xl sm:text-[30px] leading-[24px] xl:leading-[30px]">
         {head}

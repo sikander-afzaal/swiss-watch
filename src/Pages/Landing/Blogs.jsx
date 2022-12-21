@@ -13,7 +13,7 @@ const Blogs = () => {
           The key that unlocks you into The Swiss Cryptowatch Club
         </p>{" "}
         {window.innerWidth > 1280 ? (
-          <div className="grid mt-[50px] grid-cols-3 w-full gap-6">
+          <div className="grid items-stretch mt-[50px] grid-cols-3 w-full gap-6">
             <BlogBox
               img="/blog1.png"
               head="Twitter - 9 Week Campaign - Competition"
@@ -76,7 +76,7 @@ export default Blogs;
 
 const BlogBox = ({ img, date, head }) => {
   return (
-    <div className="flex h-full w-full xl:max-w-none max-w-[400px] justify-start items-start flex-col pb-4 xl:pb-7 overflow-hidden rounded-[24px] shadow-blogShadow bg-[rgba(255,255,255,0.08)]">
+    <div className="flex w-full xl:max-w-none max-w-[400px] justify-start items-start flex-col pb-4 xl:pb-7 overflow-hidden rounded-[24px] shadow-blogShadow bg-[rgba(255,255,255,0.08)]">
       <img src={img} className="object-cover w-full h-[260px]" alt="" />
       <div className="flex justify-start items-start gap-3 px-5 flex-col text-left mt-4">
         <h4 className="text-blue font-semibold uppercase text-sm leading-[14px]">
