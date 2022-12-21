@@ -105,54 +105,54 @@ const Soon = () => {
       absolute: true,
     });
   }, [activeWatch]);
-  // useEffect(() => {
-  //   const interval = setTimeout(() => {
-  //     //autoplay functionality --------------
-  //     const currentNum = activeWatch;
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      //autoplay functionality --------------
+      const currentNum = activeWatch;
 
-  //     if (window.innerWidth > 1280) {
-  //       switch (currentNum) {
-  //         case 1:
-  //           setActiveWatch(2);
-  //           break;
-  //         case 2:
-  //           setActiveWatch(3);
-  //           break;
-  //         case 3:
-  //           setActiveWatch(4);
-  //           break;
-  //         case 4:
-  //           setActiveWatch(5);
-  //           break;
-  //         case 5:
-  //           setActiveWatch(1);
-  //           break;
-  //         default:
-  //           setActiveWatch(1);
-  //           break;
-  //       }
-  //     } else {
-  //       switch (currentNum) {
-  //         case 1:
-  //           setActiveWatch(2);
-  //           break;
-  //         case 2:
-  //           setActiveWatch(3);
-  //           break;
-  //         case 3:
-  //           setActiveWatch(1);
-  //           break;
+      if (window.innerWidth > 1280) {
+        switch (currentNum) {
+          case 1:
+            setActiveWatch(2);
+            break;
+          case 2:
+            setActiveWatch(3);
+            break;
+          case 3:
+            setActiveWatch(4);
+            break;
+          case 4:
+            setActiveWatch(5);
+            break;
+          case 5:
+            setActiveWatch(1);
+            break;
+          default:
+            setActiveWatch(1);
+            break;
+        }
+      } else {
+        switch (currentNum) {
+          case 1:
+            setActiveWatch(2);
+            break;
+          case 2:
+            setActiveWatch(3);
+            break;
+          case 3:
+            setActiveWatch(1);
+            break;
 
-  //         default:
-  //           setActiveWatch(1);
-  //           break;
-  //       }
-  //     }
-  //   }, 5000);
-  //   return () => {
-  //     clearTimeout(interval);
-  //   };
-  // }, [activeWatch]);
+          default:
+            setActiveWatch(1);
+            break;
+        }
+      }
+    }, 5000);
+    return () => {
+      clearTimeout(interval);
+    };
+  }, [activeWatch]);
 
   return (
     <div className="full mt-[70px] relative  xl:mt-[150px] bg-[rgba(255,255,255,0.06)] ">
