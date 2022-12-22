@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
         <div className="xl:block hidden">
           <img
-            className="max-w-[500px]  xl:max-w-[840px] w-full object-contain"
+            className="max-w-[500px]  xl:max-w-full w-full object-contain"
             src="/hero.png"
             alt=""
           />
@@ -63,7 +63,7 @@ const Hero = () => {
                   className="w-[45px] h-[45px]"
                   alt=""
                 />
-                Unisex Collection
+                THE ART OF DIGITAL WATCHMAKING
               </p>
             </SplideSlide>
             <SplideSlide>
@@ -73,7 +73,7 @@ const Hero = () => {
                   className="w-[45px] h-[45px]"
                   alt=""
                 />
-                Swiss Collection
+                THE ART OF DIGITAL WATCHMAKING
               </p>
             </SplideSlide>
             <SplideSlide>
@@ -83,7 +83,7 @@ const Hero = () => {
                   className="w-[45px] h-[45px]"
                   alt=""
                 />
-                Bespoke Collection
+                THE ART OF DIGITAL WATCHMAKING
               </p>
             </SplideSlide>
           </Splide>

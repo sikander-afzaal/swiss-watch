@@ -60,6 +60,17 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-start items-start flex-col w-full gap-2">
+          <label htmlFor="Country" className="text-white text-sm font-normal">
+            Country
+          </label>
+          <input
+            type="text"
+            id="Country"
+            placeholder="Country"
+            className="bg-[rgba(255,255,255,0.04)] w-full h-[54px] rounded text-[rgba(255,255,255,0.48)] text-sm font-normal border-none outline-none pl-2"
+          />
+        </div>
+        <div className="flex justify-start items-start flex-col w-full gap-2">
           <label htmlFor="email" className="text-white text-sm font-normal">
             Message
           </label>

@@ -174,23 +174,23 @@ const About = () => {
           <div className="w-full xl:hidden flex xl:overflow-x-visible overflow-x-hidden  justify-center items-center relative h-auto  min-h-[450px] xl:min-h-[600px]">
             <img
               src="/logo.png"
-              className="xl:h-[75px] h-[43px] xl:w-[190px] w-[108px] object-contain"
+              className="xl:h-[75px] h-[43px] xl:w-[190px] w-[138px] object-contain"
               alt=""
             />
             <img
-              className="absolute z-30 xl:max-w-none max-w-[45px]"
+              className="absolute z-30 xl:max-w-none max-w-[85px]"
               src="/about2.png"
               ref={img1}
               alt=""
             />
             <img
-              className="absolute z-20 xl:max-w-none max-w-[63px]"
+              className="absolute z-20 xl:max-w-none max-w-[65px]"
               src="/about3.png "
               ref={img2}
               alt=""
             />
             <img
-              className="absolute z-10 xl:max-w-none max-w-[80px]"
+              className="absolute z-10 xl:max-w-none max-w-[85px]"
               src="/about1.png"
               ref={img3}
               alt=""

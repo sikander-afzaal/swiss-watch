@@ -72,7 +72,7 @@ const Header = () => {
           </nav>
           <div className="flex justify-center items-center gap-[10px]">
             <a
-              href="#"
+              href="https://www.instagram.com/swisscryptowatch/"
               className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
               target={"blank"}
             >
@@ -93,14 +93,14 @@ const Header = () => {
               <FontAwesomeIcon icon={faDiscord} />
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/channel/UCXXo8c67GfYPNtpJeQ3V4fQ"
               className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
               target={"blank"}
             >
               <FontAwesomeIcon icon={faYoutube} />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/swisscryptowatch"
               className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
               target={"blank"}
             >

@@ -2,7 +2,7 @@ import HeadingComp from "../../Components/HeadingComp";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faXing } from "@fortawesome/free-brands-svg-icons";
 
 const Team = () => {
   return (
@@ -16,8 +16,19 @@ const Team = () => {
         </p>
         {window.innerWidth > 1280 ? (
           <div className="grid mt-[50px] grid-cols-3 w-full gap-6">
-            <TeamBox img="/team3.jpg" name="Ronald" role="Founder" />
-            <TeamBox img="/team2.jpg" name="Daniel" role="Consultant" />
+            <TeamBox
+              img="/team3.jpg"
+              xing
+              social="https://login.xing.com/?dest_url=https%3A%2F%2Fwww.xing.com%2Fprofile%2FRonald_Grob&signup_channel=profileapp"
+              name="Ronald"
+              role="Founder"
+            />
+            <TeamBox
+              img="/team2.jpg"
+              social="https://www.linkedin.com/in/daniel-labhart-258b8a6/"
+              name="Daniel"
+              role="Consultant"
+            />
             <TeamBox img="/team1.jpg" name="Micha" role="Designer" />
           </div>
         ) : (
@@ -33,10 +44,21 @@ const Team = () => {
             className="slider-arrows slider-center mt-[30px]"
           >
             <SplideSlide>
-              <TeamBox img="/team3.jpg" name="Ronald" role="Founder" />
+              <TeamBox
+                img="/team3.jpg"
+                xing
+                social="https://login.xing.com/?dest_url=https%3A%2F%2Fwww.xing.com%2Fprofile%2FRonald_Grob&signup_channel=profileapp"
+                name="Ronald"
+                role="Founder"
+              />
             </SplideSlide>
             <SplideSlide>
-              <TeamBox img="/team2.jpg" name="Daniel" role="Consultant" />
+              <TeamBox
+                img="/team2.jpg"
+                social="https://www.linkedin.com/in/daniel-labhart-258b8a6/"
+                name="Daniel"
+                role="Consultant"
+              />
             </SplideSlide>
             <SplideSlide>
               <TeamBox img="/team1.jpg" name="Micha" role="Designer" />
@@ -50,7 +72,7 @@ const Team = () => {
 
 export default Team;
 
-const TeamBox = ({ img, name, role }) => {
+const TeamBox = ({ img, name, role, social, xing }) => {
   return (
     <div className="flex justify-start max-w-[460px] max-h-[450px] items-center flex-col xl:pb-5 pb-8 p-5 gap-5 bg-[rgba(255,255,255,0.04)] rounded-[36px] min-h-0 xl:min-h-[434px] h-full">
       <img
@@ -66,11 +88,11 @@ const TeamBox = ({ img, name, role }) => {
       </p>
       <div className="flex justify-center items-center gap-2">
         <a
-          href="#"
+          href={social}
           target={"blank"}
           className="no-underline text-blue text-2xl"
         >
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={xing ? faXing : faLinkedin} />
         </a>
       </div>
     </div>
