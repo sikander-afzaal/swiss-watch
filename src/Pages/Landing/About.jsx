@@ -101,19 +101,19 @@ const About = () => {
             alt=""
           />
           <img
-            className="absolute z-30 xl:max-w-none w-[85px]"
+            className="absolute z-30 xl:max-w-none w-[128px] object-contain"
             src="/about2.png"
             ref={img1Desk}
             alt=""
           />
           <img
-            className="absolute z-20 xl:max-w-none w-[85px]"
+            className="absolute z-20 xl:max-w-none w-[128px] object-contain"
             src="/about3.png "
             ref={img2Desk}
             alt=""
           />
           <img
-            className="absolute z-10 xl:max-w-none w-[85px]"
+            className="absolute z-10 xl:max-w-none w-[128px] object-contain"
             src="/about1.png"
             ref={img3Desk}
             alt=""
@@ -178,19 +178,19 @@ const About = () => {
               alt=""
             />
             <img
-              className="absolute z-30 xl:max-w-none w-[55px]"
+              className="absolute z-30 xl:max-w-none w-[72px] object-contain"
               src="/about2.png"
               ref={img1}
               alt=""
             />
             <img
-              className="absolute z-20 xl:max-w-none w-[55px]"
+              className="absolute z-20 xl:max-w-none w-[72px] object-contain"
               src="/about3.png "
               ref={img2}
               alt=""
             />
             <img
-              className="absolute z-10 xl:max-w-none w-[55px]"
+              className="absolute z-10 xl:max-w-none w-[72px] object-contain"
               src="/about1.png"
               ref={img3}
               alt=""
@@ -209,7 +209,7 @@ const About = () => {
                 opacity="0.24"
                 d="M147.066 73.9185C147.066 114.127 114.5 146.722 74.3299 146.722C34.16 146.722 1.59424 114.127 1.59424 73.9185C1.59424 33.7095 34.16 1.11523 74.3299 1.11523C114.5 1.11523 147.066 33.7095 147.066 73.9185Z"
                 stroke="white"
-                stroke-width="2"
+                strokeWidth="2"
               />
             </svg>
 
@@ -226,7 +226,7 @@ const About = () => {
                 opacity="0.24"
                 d="M249.322 126C249.322 194.764 193.734 250.503 125.169 250.503C56.6038 250.503 1.01587 194.764 1.01587 126C1.01587 57.2361 56.6038 1.49683 125.169 1.49683C193.734 1.49683 249.322 57.2361 249.322 126Z"
                 stroke="white"
-                stroke-width="2"
+                strokeWidth="2"
               />
             </svg>
 
@@ -243,7 +243,7 @@ const About = () => {
                 opacity="0.24"
                 d="M333 167C333 258.68 258.747 333 167.153 333C75.5588 333 1.30566 258.68 1.30566 167C1.30566 75.3199 75.5588 1 167.153 1C258.747 1 333 75.3199 333 167Z"
                 stroke="white"
-                stroke-width="2"
+                strokeWidth="2"
               />
             </svg>
           </div>

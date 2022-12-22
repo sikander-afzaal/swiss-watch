@@ -24,7 +24,13 @@ const Soon = () => {
       watch4.current,
       watch5.current,
     ];
-    const watchArrayMob = [watch1.current, watch2.current, watch3.current];
+    const watchArrayMob = [
+      watch1.current,
+      watch2.current,
+      watch3.current,
+      watch4.current,
+      watch5.current,
+    ];
     const watchState =
       window.innerWidth > 1280
         ? Flip.getState(watchArray)
@@ -77,10 +83,13 @@ const Soon = () => {
         (elem) => !elem.classList.contains("activeWatchMob")
       );
       filteredArray__After__Old__Active__StateMob.forEach((elem, idx) => {
-        elem.classList.remove("w-[100px]");
-        elem.classList.remove("left-[10%]");
+        elem.classList.remove("w-[67px]");
+        elem.classList.remove("left-[5%]");
+        elem.classList.remove("left-[20%]");
+        elem.classList.remove("right-[20%]");
+        elem.classList.remove("right-[5%]");
         elem.classList.remove("-z-[10]");
-        elem.classList.remove("right-[10%]");
+        elem.classList.remove("-z-[20]");
       });
       watchArrayMob.forEach((elem) => {
         elem.classList.remove("activeWatchMob");
@@ -90,16 +99,21 @@ const Soon = () => {
         (elem) => !elem.classList.contains("activeWatchMob")
       );
       filteredArray__After__New__Active__StateMob.forEach((elem, idx) => {
-        elem.classList.add("w-[100px]");
+        elem.classList.add("w-[67px]");
         if (idx === 0) {
-          elem.classList.add("left-[10%]");
-          elem.classList.add("-z-[10]");
+          elem.classList.add("left-[5%]");
+          elem.classList.add("-z-[20]");
         } else if (idx === 1) {
-          elem.classList.add("right-[10%]");
+          elem.classList.add("left-[20%]");
           elem.classList.add("-z-[10]");
+        } else if (idx === 2) {
+          elem.classList.add("right-[20%]");
+          elem.classList.add("-z-[10]");
+        } else if (idx === 3) {
+          elem.classList.add("right-[5%]");
+          elem.classList.add("-z-[20]");
         }
       });
-      console.log(filteredArray__After__New__Active__StateMob);
     }
     Flip.from(watchState, {
       duration: 2,
@@ -112,43 +126,25 @@ const Soon = () => {
       //autoplay functionality --------------
       const currentNum = activeWatch;
 
-      if (window.innerWidth > 1280) {
-        switch (currentNum) {
-          case 1:
-            setActiveWatch(2);
-            break;
-          case 2:
-            setActiveWatch(3);
-            break;
-          case 3:
-            setActiveWatch(4);
-            break;
-          case 4:
-            setActiveWatch(5);
-            break;
-          case 5:
-            setActiveWatch(1);
-            break;
-          default:
-            setActiveWatch(1);
-            break;
-        }
-      } else {
-        switch (currentNum) {
-          case 1:
-            setActiveWatch(2);
-            break;
-          case 2:
-            setActiveWatch(3);
-            break;
-          case 3:
-            setActiveWatch(1);
-            break;
-
-          default:
-            setActiveWatch(1);
-            break;
-        }
+      switch (currentNum) {
+        case 1:
+          setActiveWatch(2);
+          break;
+        case 2:
+          setActiveWatch(3);
+          break;
+        case 3:
+          setActiveWatch(4);
+          break;
+        case 4:
+          setActiveWatch(5);
+          break;
+        case 5:
+          setActiveWatch(1);
+          break;
+        default:
+          setActiveWatch(1);
+          break;
       }
     }, 5000);
     return () => {
@@ -185,6 +181,20 @@ const Soon = () => {
                 ref={watch3}
                 onClick={() => setActiveWatch(3)}
                 src="/soon3.png"
+                alt=""
+                className={`cursor-pointer top-1/2 -translate-y-1/2 absolute  object-contain `}
+              />
+              <img
+                ref={watch4}
+                onClick={() => setActiveWatch(4)}
+                src="/soon4.png"
+                alt=""
+                className={`cursor-pointer top-1/2 -translate-y-1/2 absolute  object-contain `}
+              />
+              <img
+                ref={watch5}
+                onClick={() => setActiveWatch(5)}
+                src="/soon5.png"
                 alt=""
                 className={`cursor-pointer top-1/2 -translate-y-1/2 absolute  object-contain `}
               />
@@ -243,14 +253,14 @@ const Soon = () => {
             <img
               ref={watch1}
               onClick={() => setActiveWatch(1)}
-              src="/soon1.png"
+              src="/soon5.png"
               className={`cursor-pointer    top-1/2 -translate-y-1/2 absolute   object-contain `}
               alt=""
             />
             <img
               ref={watch2}
               onClick={() => setActiveWatch(2)}
-              src="/soon2.png"
+              src="/soon1.png"
               className={`cursor-pointer   top-1/2 -translate-y-1/2 absolute   object-contain  `}
               alt=""
             />
@@ -271,7 +281,7 @@ const Soon = () => {
             <img
               ref={watch5}
               onClick={() => setActiveWatch(5)}
-              src="/soon5.png"
+              src="/soon2.png"
               alt=""
               className={`cursor-pointer    top-1/2 -translate-y-1/2 object-contain absolute  `}
             />
