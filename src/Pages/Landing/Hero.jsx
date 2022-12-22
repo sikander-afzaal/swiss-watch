@@ -41,7 +41,7 @@ const Hero = () => {
       <div className="xl:m-0 mt-8 w-full relative isolate">
         <span className="absolute left-0 top-0 w-full h-full bg-blue -z-[2]"></span>
         <span className="absolute left-0 top-0 w-full h-full bg-black -z-[1] opacity-[0.18]"></span>
-        <div className="w-full bg-blue overflow-hidden -rotate-[1.35deg] py-5 xl:py-[30px]">
+        <div className="w-full bg-blue overflow-hidden -rotate-[1.35deg] py-5 xl:py-[20px]">
           <Splide
             extensions={{ AutoScroll }}
             options={{

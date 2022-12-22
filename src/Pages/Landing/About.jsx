@@ -101,19 +101,19 @@ const About = () => {
             alt=""
           />
           <img
-            className="absolute z-30 xl:max-w-none max-w-[45px]"
+            className="absolute z-30 xl:max-w-none w-[85px]"
             src="/about2.png"
             ref={img1Desk}
             alt=""
           />
           <img
-            className="absolute z-20 xl:max-w-none max-w-[63px]"
+            className="absolute z-20 xl:max-w-none w-[85px]"
             src="/about3.png "
             ref={img2Desk}
             alt=""
           />
           <img
-            className="absolute z-10 xl:max-w-none max-w-[80px]"
+            className="absolute z-10 xl:max-w-none w-[85px]"
             src="/about1.png"
             ref={img3Desk}
             alt=""
@@ -178,19 +178,19 @@ const About = () => {
               alt=""
             />
             <img
-              className="absolute z-30 xl:max-w-none max-w-[85px]"
+              className="absolute z-30 xl:max-w-none w-[55px]"
               src="/about2.png"
               ref={img1}
               alt=""
             />
             <img
-              className="absolute z-20 xl:max-w-none max-w-[65px]"
+              className="absolute z-20 xl:max-w-none w-[55px]"
               src="/about3.png "
               ref={img2}
               alt=""
             />
             <img
-              className="absolute z-10 xl:max-w-none max-w-[85px]"
+              className="absolute z-10 xl:max-w-none w-[55px]"
               src="/about1.png"
               ref={img3}
               alt=""
