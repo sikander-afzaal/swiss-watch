@@ -5,7 +5,7 @@ import "@splidejs/react-splide/css";
 
 const Hero = () => {
   const marqueeTextStyles =
-    "font-bold text-[24px] xl:text-[42px] text-white flex justify-center items-center uppercase leading-[24px] xl:leading-[1] gap-5 w-full xl:gap-[20px]";
+    "font-bold text-[24px] xl:text-[32px] text-white flex justify-center items-center uppercase leading-[24px] xl:leading-[1] gap-5 w-full xl:gap-[20px]";
   return (
     <div id="home" className="full bg-hero">
       <section className=" section items-center  xl:items-start pt-[130px] flex-col xl:flex-row xl:gap-0 gap-[40px]  xl:pt-[120px]">
