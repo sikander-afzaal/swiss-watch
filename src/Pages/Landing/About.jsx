@@ -101,19 +101,19 @@ const About = () => {
             alt=""
           />
           <img
-            className="absolute z-30 xl:max-w-none w-[128px] object-contain"
+            className="absolute z-30 xl:max-w-none w-[138px] object-contain"
             src="/about2.png"
             ref={img1Desk}
             alt=""
           />
           <img
-            className="absolute z-20 xl:max-w-none w-[128px] object-contain"
+            className="absolute z-20 xl:max-w-none w-[138px] object-contain"
             src="/about3.png "
             ref={img2Desk}
             alt=""
           />
           <img
-            className="absolute z-10 xl:max-w-none w-[128px] object-contain"
+            className="absolute z-10 xl:max-w-none w-[138px] object-contain"
             src="/about1.png"
             ref={img3Desk}
             alt=""
@@ -178,19 +178,19 @@ const About = () => {
               alt=""
             />
             <img
-              className="absolute z-30 xl:max-w-none w-[72px] object-contain"
+              className="absolute z-30 xl:max-w-none w-[82px] object-contain"
               src="/about2.png"
               ref={img1}
               alt=""
             />
             <img
-              className="absolute z-20 xl:max-w-none w-[72px] object-contain"
+              className="absolute z-20 xl:max-w-none w-[82px] object-contain"
               src="/about3.png "
               ref={img2}
               alt=""
             />
             <img
-              className="absolute z-10 xl:max-w-none w-[72px] object-contain"
+              className="absolute z-10 xl:max-w-none w-[82px] object-contain"
               src="/about1.png"
               ref={img3}
               alt=""
