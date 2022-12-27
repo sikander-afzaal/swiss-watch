@@ -13,7 +13,7 @@
     @apply left-[20%] h-[400px]  w-[300px] z-20;
   }
   .activeWatchMob {
-    @apply left-[27%] w-[160px] z-20;
+    @apply left-[27%] w-[160px] h-[258px] z-20;
   }
 }
 * {

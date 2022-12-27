@@ -54,65 +54,154 @@ const Soon = () => {
       watchArray.forEach((elem) => {
         elem.classList.remove("activeWatch");
       });
-      // ------------------------------------------
-      // adding new classes ----------------------------------
-      watchArray[activeWatch - 1].classList.add("activeWatch");
+
+      switch (activeWatch) {
+        case 1:
+          watch1.current.classList.add("activeWatch");
+          watch2.current.classList.add("right-[10%]");
+          watch2.current.classList.add("-z-[10]");
+          watch3.current.classList.add("right-[0%]");
+          watch3.current.classList.add("-z-[20]");
+          watch4.current.classList.add("left-[10%]");
+          watch4.current.classList.add("-z-[10]");
+          watch5.current.classList.add("left-[0%]");
+          watch5.current.classList.add("-z-[20]");
+          break;
+        case 2:
+          watch2.current.classList.add("activeWatch");
+          watch3.current.classList.add("right-[10%]");
+          watch3.current.classList.add("-z-[10]");
+          watch5.current.classList.add("right-[0%]");
+          watch5.current.classList.add("-z-[20]");
+          watch1.current.classList.add("left-[10%]");
+          watch1.current.classList.add("-z-[10]");
+          watch4.current.classList.add("left-[0%]");
+          watch4.current.classList.add("-z-[20]");
+          break;
+        case 3:
+          watch3.current.classList.add("activeWatch");
+          watch5.current.classList.add("right-[10%]");
+          watch5.current.classList.add("-z-[10]");
+          watch4.current.classList.add("right-[0%]");
+          watch4.current.classList.add("-z-[20]");
+          watch2.current.classList.add("left-[10%]");
+          watch2.current.classList.add("-z-[10]");
+          watch1.current.classList.add("left-[0%]");
+          watch1.current.classList.add("-z-[20]");
+          break;
+        case 4:
+          watch5.current.classList.add("activeWatch");
+          watch4.current.classList.add("right-[10%]");
+          watch4.current.classList.add("-z-[10]");
+          watch1.current.classList.add("right-[0%]");
+          watch1.current.classList.add("-z-[20]");
+          watch3.current.classList.add("left-[10%]");
+          watch3.current.classList.add("-z-[10]");
+          watch2.current.classList.add("left-[0%]");
+          watch2.current.classList.add("-z-[20]");
+          break;
+        case 5:
+          watch4.current.classList.add("activeWatch");
+          watch1.current.classList.add("right-[10%]");
+          watch1.current.classList.add("-z-[10]");
+          watch2.current.classList.add("right-[0%]");
+          watch2.current.classList.add("-z-[20]");
+          watch5.current.classList.add("left-[10%]");
+          watch5.current.classList.add("-z-[10]");
+          watch3.current.classList.add("left-[0%]");
+          watch3.current.classList.add("-z-[20]");
+          break;
+
+        default:
+          break;
+      }
       const filteredArray__After__New__Active__State = watchArray.filter(
         (elem) => !elem.classList.contains("activeWatch")
       );
       filteredArray__After__New__Active__State.forEach((elem, idx) => {
         elem.classList.add("w-[206px]");
         elem.classList.add("h-[300px]");
-        if (idx === 0) {
-          elem.classList.add("left-[0%]");
-          elem.classList.add("-z-[20]");
-        } else if (idx === 1) {
-          elem.classList.add("left-[10%]");
-          elem.classList.add("-z-[10]");
-        } else if (idx === 2) {
-          elem.classList.add("right-[10%]");
-          elem.classList.add("-z-[10]");
-        } else if (idx === 3) {
-          elem.classList.add("right-[0%]");
-          elem.classList.add("-z-[20]");
-        }
       });
     } else {
       //removing all the old classes --------------------
-      const filteredArray__After__Old__Active__StateMob = watchArrayMob.filter(
-        (elem) => !elem.classList.contains("activeWatchMob")
-      );
-      filteredArray__After__Old__Active__StateMob.forEach((elem, idx) => {
+
+      watchArrayMob.forEach((elem, idx) => {
         elem.classList.remove("w-[67px]");
         elem.classList.remove("left-[5%]");
         elem.classList.remove("left-[20%]");
         elem.classList.remove("right-[20%]");
         elem.classList.remove("right-[5%]");
+        elem.classList.remove("h-[95px]");
         elem.classList.remove("-z-[10]");
         elem.classList.remove("-z-[20]");
-      });
-      watchArrayMob.forEach((elem) => {
         elem.classList.remove("activeWatchMob");
       });
-      watchArrayMob[activeWatch - 1].classList.add("activeWatchMob");
-      const filteredArray__After__New__Active__StateMob = watchArrayMob.filter(
+      switch (activeWatch) {
+        case 1:
+          watch1.current.classList.add("activeWatchMob");
+          watch2.current.classList.add("right-[20%]");
+          watch2.current.classList.add("-z-[10]");
+          watch3.current.classList.add("right-[5%]");
+          watch3.current.classList.add("-z-[20]");
+          watch4.current.classList.add("left-[20%]");
+          watch4.current.classList.add("-z-[10]");
+          watch5.current.classList.add("left-[5%]");
+          watch5.current.classList.add("-z-[20]");
+          break;
+        case 2:
+          watch2.current.classList.add("activeWatchMob");
+          watch3.current.classList.add("right-[20%]");
+          watch3.current.classList.add("-z-[10]");
+          watch5.current.classList.add("right-[5%]");
+          watch5.current.classList.add("-z-[20]");
+          watch1.current.classList.add("left-[20%]");
+          watch1.current.classList.add("-z-[10]");
+          watch4.current.classList.add("left-[5%]");
+          watch4.current.classList.add("-z-[20]");
+          break;
+        case 3:
+          watch3.current.classList.add("activeWatchMob");
+          watch5.current.classList.add("right-[20%]");
+          watch5.current.classList.add("-z-[10]");
+          watch4.current.classList.add("right-[5%]");
+          watch4.current.classList.add("-z-[20]");
+          watch2.current.classList.add("left-[20%]");
+          watch2.current.classList.add("-z-[10]");
+          watch1.current.classList.add("left-[5%]");
+          watch1.current.classList.add("-z-[20]");
+          break;
+        case 4:
+          watch5.current.classList.add("activeWatchMob");
+          watch4.current.classList.add("right-[20%]");
+          watch4.current.classList.add("-z-[10]");
+          watch1.current.classList.add("right-[5%]");
+          watch1.current.classList.add("-z-[20]");
+          watch3.current.classList.add("left-[20%]");
+          watch3.current.classList.add("-z-[10]");
+          watch2.current.classList.add("left-[5%]");
+          watch2.current.classList.add("-z-[20]");
+          break;
+        case 5:
+          watch4.current.classList.add("activeWatchMob");
+          watch1.current.classList.add("right-[20%]");
+          watch1.current.classList.add("-z-[10]");
+          watch2.current.classList.add("right-[5%]");
+          watch2.current.classList.add("-z-[20]");
+          watch5.current.classList.add("left-[20%]");
+          watch5.current.classList.add("-z-[10]");
+          watch3.current.classList.add("left-[5%]");
+          watch3.current.classList.add("-z-[20]");
+          break;
+
+        default:
+          break;
+      }
+      const filteredArray__After__New__Active__State = watchArrayMob.filter(
         (elem) => !elem.classList.contains("activeWatchMob")
       );
-      filteredArray__After__New__Active__StateMob.forEach((elem, idx) => {
+      filteredArray__After__New__Active__State.forEach((elem, idx) => {
         elem.classList.add("w-[67px]");
-        if (idx === 0) {
-          elem.classList.add("left-[5%]");
-          elem.classList.add("-z-[20]");
-        } else if (idx === 1) {
-          elem.classList.add("left-[20%]");
-          elem.classList.add("-z-[10]");
-        } else if (idx === 2) {
-          elem.classList.add("right-[20%]");
-          elem.classList.add("-z-[10]");
-        } else if (idx === 3) {
-          elem.classList.add("right-[5%]");
-          elem.classList.add("-z-[20]");
-        }
+        elem.classList.add("h-[95px]");
       });
     }
     Flip.from(watchState, {
