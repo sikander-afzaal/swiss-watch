@@ -1,13 +1,54 @@
 import HeadingComp from "../../Components/HeadingComp";
 import Button from "../../Components/Button";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    first: "",
+    last: "",
+    email: "",
+    phone: "",
+    country: "",
+    message: "",
+  });
+  const inputHandler = (e) => {
+    const inputName = e.target.name;
+    setFormData((prev) => {
+      return { ...prev, [inputName]: e.target.value };
+    });
+  };
+  const form = useRef();
   return (
     <div id="contact" className="full mt-[80px] xl:mt-[140px] px-5">
       <HeadingComp sub="Contact" head="Get in Touch" />
       <form
+        ref={form}
         onSubmit={(e) => {
           e.preventDefault();
+          // service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service
+          // emailjs
+          //   .sendForm(
+          //     "service_mhzx49l",
+          //     "template_238cw38",
+          //     form.current,
+          //     "5FzKpFg6Ck-d1otwx"
+          //   )
+          //   .then(
+          //     (result) => {
+          //       setFormData({
+          //         first: "",
+          //         last: "",
+          //         email: "",
+          //         phone: "",
+          //         country: "",
+          //         message: "",
+          //       });
+          //     },
+          //     (error) => {
+          //       alert("error");
+          //     }
+          //   );
         }}
         className="bg-[rgba(255,255,255,0.06)] gap-[20px] mt-[30px] rounded-[24px] flex justify-start items-start flex-col w-full max-w-[704px] p-5 sm:p-7"
       >
@@ -17,8 +58,11 @@ const Contact = () => {
               First Name
             </label>
             <input
+              name="first"
+              onChange={inputHandler}
               type="text"
               id="first"
+              value={formData.first}
               placeholder="First Name"
               className="bg-[rgba(255,255,255,0.04)] w-full h-[54px] rounded text-[rgba(255,255,255,0.48)] text-sm font-normal border-none outline-none pl-2"
             />
@@ -30,6 +74,9 @@ const Contact = () => {
             <input
               type="text"
               id="last"
+              value={formData.last}
+              name="last"
+              onChange={inputHandler}
               placeholder="Last Name"
               className="bg-[rgba(255,255,255,0.04)] w-full h-[54px] rounded text-[rgba(255,255,255,0.48)] text-sm font-normal border-none outline-none pl-2"
             />
@@ -41,6 +88,9 @@ const Contact = () => {
               Email
             </label>
             <input
+              name="email"
+              value={formData.email}
+              onChange={inputHandler}
               type="text"
               id="email"
               placeholder="Email"
@@ -53,6 +103,9 @@ const Contact = () => {
             </label>
             <input
               type="text"
+              name="phone"
+              value={formData.phone}
+              onChange={inputHandler}
               id="phone"
               placeholder="Phone"
               className="bg-[rgba(255,255,255,0.04)] w-full h-[54px] rounded text-[rgba(255,255,255,0.48)] text-sm font-normal border-none outline-none pl-2"
@@ -64,6 +117,9 @@ const Contact = () => {
             Country
           </label>
           <input
+            name="country"
+            value={formData.country}
+            onChange={inputHandler}
             type="text"
             id="Country"
             placeholder="Country"
@@ -75,6 +131,9 @@ const Contact = () => {
             Message
           </label>
           <textarea
+            value={formData.message}
+            name="message"
+            onChange={inputHandler}
             id="email"
             placeholder="Message"
             className="bg-[rgba(255,255,255,0.04)] resize-none h-[120px] w-full rounded text-[rgba(255,255,255,0.48)] text-sm font-normal pt-2 border-none outline-none pl-2"
