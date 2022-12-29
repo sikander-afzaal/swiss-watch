@@ -10,7 +10,7 @@
     @apply max-w-max flex justify-center items-center w-full px-5;
   }
   .activeWatch {
-    @apply left-[20%] h-[400px]  w-[300px] z-20;
+    @apply left-[20%]  h-[400px]  w-[300px] z-20;
   }
   .activeWatchMob {
     @apply left-[27%] w-[160px] h-[258px] z-20;
