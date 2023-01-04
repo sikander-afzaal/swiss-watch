@@ -165,17 +165,10 @@ const Roadmap = () => {
               ></div>
             </div>
             {/* left line roadmap ---------- */}
-            <div className="xl:text-center xl:mb-0 xl:h-auto h-[140px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4">
-              <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>Dec 2022</h3>
-              <p className={roadmapDescStyles}>
-                Monthly collections will be unveiled, All Swiss Crypto Watches
-                can be used on Smart phones and Smart watches
-              </p>
-            </div>
+
             <div className="xl:text-center xl:mb-0 xl:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>2023 q1</h3>
+              <h3 className={roadmapHeadStyles}>2023 Q1</h3>
               <p className={roadmapDescStyles}>
                 Welcome to Swiss Cryptowatch Club (SCWC)
               </p>
@@ -183,7 +176,7 @@ const Roadmap = () => {
 
             <div className="xl:text-center xl:mb-0 xl:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>2023 Q2</h3>
+              <h3 className={roadmapHeadStyles}>2023 Q1</h3>
               <p className={roadmapDescStyles}>
                 First Swiss Crypto Watch unveiled, payable only with Swiss
                 Crypto Watch Coin (SCWC)
@@ -191,7 +184,7 @@ const Roadmap = () => {
             </div>
             <div className="xl:text-center xl:mb-0 xl:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>2023 q4</h3>
+              <h3 className={roadmapHeadStyles}>2023 Q2</h3>
               <p className={roadmapDescStyles}>
                 New monthly collections will be available
               </p>
@@ -206,6 +199,13 @@ const Roadmap = () => {
             <div className="xl:text-center text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 Q3</h3>
+              <p className={roadmapDescStyles}>
+                New monthly collections will be available
+              </p>
+            </div>
+            <div className="xl:text-center xl:mb-0 xl:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
+              <div className={circleStyles}></div>
+              <h3 className={roadmapHeadStyles}>2023 q4</h3>
               <p className={roadmapDescStyles}>
                 New monthly collections will be available
               </p>
