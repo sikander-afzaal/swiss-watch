@@ -75,7 +75,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-center w-full items-center py-6 mt-8 bg-[rgba(255,255,255,0.04)]">
         <p className="text-white font-normal text-center text-base">
-          Copyright © 2021{" "}
+          Copyright © 2023{" "}
           <a href="#" target={"blank"} className="no-underline text-blue">
             Swisscryptowatch.com
           </a>{" "}

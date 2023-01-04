@@ -5,17 +5,13 @@ const Value = () => {
     <div className="full mt-[150px]">
       <div className="section flex-col">
         <div className="flex justify-center gap-2 items-center text-center flex-col">
-          <HeadingComp sub="value" head="Our Values" />{" "}
-          <p className="text-white text-base sm:text-[20px] leading-[30px] xl:max-w-none max-w-[600px]">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.
-          </p>
+          <HeadingComp sub="" head="Our Values" />{" "}
         </div>
         <div className="grid items-stretch mt-[40px] gap-8 xl:gap-4 place-items-center grid-cols-1 xl:grid-cols-3 w-full">
           <ValueBox
             head="Innovation"
             img="/val1.png"
-            desc="Swiss Crypto Watch is the leading NFT watch brand. Des"
+            desc="Swiss Crypto Watch is the leading NFT watch brand."
           />
           <ValueBox
             head="Utility"
@@ -25,7 +21,7 @@ const Value = () => {
           <ValueBox
             head="Swiss Quality & Design"
             img="/val3.png"
-            desc="Swiss Crypto Watch is an idea from watch enthusiast Ronald Grob. He created the concept & developed the design with Daniel Labhard and Michael Kornmayer"
+            desc="Swiss Crypto Watch is an idea from watch enthusiast Ronald Grob. He created the concept & developed the design with Daniel Labhart and Michael Kornmayer"
           />
         </div>
       </div>

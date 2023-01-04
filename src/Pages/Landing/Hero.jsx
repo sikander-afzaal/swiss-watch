@@ -21,11 +21,13 @@ const Hero = () => {
             />
           </div>
           <p className="text-white text-base xl:text-[22px] leading-[34px] max-w-[615px]">
-            Every buyer is automatically member of Swiss Crypto Watch Club.
-            Swiss Crypto Watch Club will offer special collections and other
-            amenities to their members.
+            Swiss Crypto Watch is fhe first entirely digital Swiss Watch Brand
+            and was founded in 2022. Headoffice is in Pfäffikon, Switzerland.
           </p>
-          <Button classes={"mt-[30px] xl:mt-[50px]"} name="JOIN DISCORD" />
+          <Button
+            classes={"mt-[30px] xl:mt-[50px]"}
+            name="VIEW COLLECTION ON OPENSEA"
+          />
         </div>
         <div className="xl:block hidden">
           <img
@@ -48,7 +50,7 @@ const Hero = () => {
               type: "loop",
               drag: "free",
               autoWidth: true,
-              gap: "20px",
+              gap: "100px",
               arrows: false,
               pagination: false,
               autoScroll: {

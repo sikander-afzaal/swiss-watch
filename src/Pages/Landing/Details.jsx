@@ -2,6 +2,7 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import HeadingComp from "../../Components/HeadingComp";
+import Button from "../../Components/Button";
 
 const Details = () => {
   const coin1 = useRef();
@@ -80,15 +81,11 @@ const Details = () => {
             <p className="text-white text-base sm:text-[20px] leading-[30px] xl:max-w-none max-w-[600px]">
               Swiss Crypto Watch Coin will be tradable in early 2023, followed
               by a dedicated strictly limited watch collection only payable with
-              the Co.
+              the Coin.
             </p>
-            {/* <Button name="Learn More" classes="mt-5" /> */}
+
+            <Button name="Join Discord" classes="mt-5" />
           </div>{" "}
-          {/* <img
-            src="/coin.png"
-            className="max-w-[350px] xl:block hidden sm:max-w-[500px] xl:max-w-[600px] object-contain w-full"
-            alt=""
-          /> */}
           <div className="w-full justify-center items-center xl:flex hidden">
             <img
               src="/coin1.png"

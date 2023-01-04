@@ -248,16 +248,11 @@ const About = () => {
             </svg>
           </div>
           <p className="text-white text-base sm:text-[20px] leading-[30px]">
-            Swiss Crypto Watch Coin will be tradable in early 2023, followed by
-            a dedicated strictly limited watch collection only payable with the
-            Coin.
+            Every buyer is automatically member of Swiss Crypto Watch Club.
+            Swiss Crypto Watch Club will offer special collections and other
+            amenities to their members.
           </p>
-          <p className="text-white text-base sm:text-[20px] leading-[30px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
-          </p>
+
           <Button name="Join Discord" classes="mt-[30px]" />
         </div>
       </div>

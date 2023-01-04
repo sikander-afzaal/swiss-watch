@@ -441,9 +441,7 @@ const Soon = () => {
             ""
           )}
           <p className="text-white text-base sm:text-[22px] leading-[34px] xl:max-w-none max-w-[600px]">
-            Every buyer is automatically member of Swiss Crypto Watch Club.
-            Swiss Crypto Watch Club will offer special collections and other
-            amenities to their members.
+            Get an impressiom of the upcoming Swiss Crypto Wach Collection.
           </p>
           <Button name={"Join Discord"} classes="mt-[20px] xl:mt-[60px]" />
           {/* //pagination -------------------- */}
