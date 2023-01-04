@@ -20,7 +20,7 @@ const Roadmap = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    //desktip animation
+    //desktop animation
     const lineArray = [
       line2.current,
       line4.current,
@@ -29,7 +29,7 @@ const Roadmap = () => {
       line3.current,
       line1.current,
     ];
-    if (window.innerWidth > 1280) {
+    if (window.innerWidth > 1024) {
       gsap.set(lineArray, { filter: "brightness(0) invert(1)" });
       gsap.fromTo(
         lineArray,
@@ -66,7 +66,7 @@ const Roadmap = () => {
           3 collections will be available, each limited to 999 pieces, Bespoke
           collection will be available, limited to only 99 in 2023
         </p>
-        {window.innerWidth > 1280 ? (
+        {window.innerWidth > 1024 ? (
           <div className="grid gap-x-5 gap-y-7 grid-cols-2 xl:grid-cols-[auto__1fr__auto] w-full grid-rows-[1fr__auto__auto__auto] xl:grid-rows-3 mt-[40px] xl:mt-[80px]">
             {/* Row 1 roadmap ---------------------- */}
             <div className="self-start relative row-start-2 row-end-3 col-start-1 col-end-2 xl:row-start-1 xl:row-end-2 xl:col-start-1 xl:col-end-2 flex justify-start h-full xl:h-auto xl:justify-center items-end flex-col gap-4 text-right">
