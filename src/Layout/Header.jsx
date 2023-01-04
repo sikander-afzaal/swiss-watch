@@ -69,6 +69,13 @@ const Header = () => {
             >
               Contact
             </a>
+            <a
+              className={navlinkStyles}
+              onClick={() => setHeaderToggle(false)}
+              href="#details"
+            >
+              Company Details
+            </a>
           </nav>
           <div className="flex justify-center items-center gap-[10px]">
             <a
