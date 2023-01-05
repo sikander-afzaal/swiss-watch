@@ -67,10 +67,10 @@ const Team = () => {
         )}
         <div
           id="details"
-          className="flex justify-between gap-[60px] xl:flex-row flex-col -mb-12 sm:mb-[0px]  xl:mb-[120px] items-center w-full mt-[200px] sm:mt-[250px] xl:mt-[220px]"
+          className="flex justify-between gap-[60px] lg:flex-row flex-col -mb-12 sm:mb-[0px]  xl:mb-[120px] items-center w-full mt-[200px] sm:mt-[250px] xl:mt-[220px]"
         >
-          <div className="flex gap-5 items-center justify-start text-center xl:text-left xl:items-start flex-col">
-            <h6 className="text-blue font-bold sm:text-[60px] text-[35px] leading-[44px] sm:leading-[68px] ">
+          <div className="flex gap-5 items-center justify-start text-center lg:text-left lg:items-start flex-col">
+            <h6 className="text-blue font-bold sm:text-[45px] xl:text-[60px] text-[35px] leading-[44px] sm:leading-[68px] ">
               Company Details
             </h6>
             <p className="text-white   leading-[1.8]text-sm sm:text-lg font-semibold">
@@ -83,7 +83,7 @@ const Team = () => {
           </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.072673070932!2d8.762480899999998!3d47.1955901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ab1591c393c1d%3A0xd1d92b6086bbe480!2sSummelenweg%2091%2C%208808%20Pf%C3%A4ffikon%2C%20Switzerland!5e0!3m2!1sen!2s!4v1672929555612!5m2!1sen!2s"
-            className="w-full max-w-[700px] aspect-square sm:aspect-video object-contain"
+            className="w-full max-w-[700px] aspect-square xl:aspect-video object-contain"
             style={{ border: 0 }}
             allowfullscreen=""
             loading="lazy"
