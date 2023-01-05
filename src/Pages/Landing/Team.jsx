@@ -65,17 +65,28 @@ const Team = () => {
             </SplideSlide>
           </Splide>
         )}
-        <h6
+        <div
           id="details"
-          className="text-blue font-bold sm:text-[60px] text-[35px] leading-[44px] sm:leading-[68px] mt-[70px] xl:mt-[150px]"
+          className="flex justify-between gap-[60px] xl:flex-row flex-col -mb-12 sm:mb-[0px]  xl:mb-[180px] items-center w-full mt-[200px] sm:mt-[280px] xl:mt-[220px]"
         >
-          Company Details
-        </h6>
-        <p className="text-white mb-[70px]   leading-[1.8] text-center text-sm sm:text-lg font-semibold">
-          Swiss Crypto Watch is a brand of RG Watches & Jewelry GmbH,
-          Summelenweg 91, 8808 Pfäffikon/Switzerland <br /> Official register
-          number CHE-307.000.557
-        </p>
+          <div className="flex gap-5 items-center justify-start text-center xl:text-left xl:items-start flex-col">
+            <h6 className="text-blue font-bold sm:text-[60px] text-[35px] leading-[44px] sm:leading-[68px] ">
+              Company Details
+            </h6>
+            <p className="text-white   leading-[1.8]text-sm sm:text-lg font-semibold">
+              Swiss Crypto Watch is a brand of RG Watches & Jewelry GmbH,
+              Summelenweg 91, 8808 Pfäffikon/Switzerland
+            </p>
+            <p className="text-white   leading-[1.8]text-sm sm:text-lg font-semibold">
+              Official register number CHE-307.000.557
+            </p>
+          </div>
+          <img
+            className="w-full max-w-[700px] object-contain"
+            src="https://assets.entrepreneur.com/content/3x2/2000/20150805204041-google-company-building-corporate.jpeg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
