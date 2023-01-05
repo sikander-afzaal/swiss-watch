@@ -83,7 +83,7 @@ const Team = () => {
           </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.072673070932!2d8.762480899999998!3d47.1955901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ab1591c393c1d%3A0xd1d92b6086bbe480!2sSummelenweg%2091%2C%208808%20Pf%C3%A4ffikon%2C%20Switzerland!5e0!3m2!1sen!2s!4v1672929555612!5m2!1sen!2s"
-            className="w-full max-w-[700px] aspect-video object-contain"
+            className="w-full max-w-[700px] aspect-square sm:aspect-video object-contain"
             style={{ border: 0 }}
             allowfullscreen=""
             loading="lazy"
