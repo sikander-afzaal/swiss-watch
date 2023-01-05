@@ -67,7 +67,7 @@ const Team = () => {
         )}
         <div
           id="details"
-          className="flex justify-between gap-[60px] lg:flex-row flex-col -mb-12 sm:mb-[0px]  xl:mb-[120px] items-center w-full mt-[200px] sm:mt-[250px] xl:mt-[220px]"
+          className="flex justify-between gap-[60px] lg:flex-row flex-col -mb-12 sm:mb-[0px]  xl:mb-[120px] items-start w-full mt-[200px] sm:mt-[250px] xl:mt-[220px]"
         >
           <div className="flex gap-5 items-center justify-start text-center lg:text-left lg:items-start flex-col">
             <h6 className="text-blue font-bold sm:text-[45px] xl:text-[60px] text-[35px] leading-[44px] sm:leading-[68px] ">
