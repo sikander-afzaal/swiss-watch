@@ -18,17 +18,6 @@ const Subscribe = () => {
           SUBSCRIBE NOW
         </button>
       </div>
-      <h6
-        id="details"
-        className="text-blue mb-4 font-bold sm:text-[60px] text-[35px] leading-[44px] sm:leading-[68px] mt-[50px]"
-      >
-        Company Details
-      </h6>
-      <p className="text-white   leading-[1.8] text-center text-sm sm:text-lg font-semibold">
-        Swiss Crypto Watch is a brand of RG Watches & Jewelry GmbH, Summelenweg
-        91, 8808 Pfäffikon/Switzerland <br /> Official register
-        number CHE-307.000.557
-      </p>
     </div>
   );
 };

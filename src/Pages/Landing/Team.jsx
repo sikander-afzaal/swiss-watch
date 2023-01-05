@@ -9,7 +9,7 @@ const Team = () => {
     <div id="team" className="full relative mt-[70px] xl:mt-[150px] ">
       <div className="absolute rounded-full top-[20%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  right-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col gap-3 text-center">
-        <HeadingComp head="Swiss Cryptowatch Club Team" sub="" />
+        <HeadingComp head="Swiss Cryptowatch  Team" sub="" />
         <p className="text-white text-base sm:text-[20px] leading-[30px] ">
           Please join our discord to get involved with the community and receive
           exclusive updates.
@@ -65,6 +65,17 @@ const Team = () => {
             </SplideSlide>
           </Splide>
         )}
+        <h6
+          id="details"
+          className="text-blue font-bold sm:text-[60px] text-[35px] leading-[44px] sm:leading-[68px] mt-[70px] xl:mt-[150px]"
+        >
+          Company Details
+        </h6>
+        <p className="text-white mb-[70px]   leading-[1.8] text-center text-sm sm:text-lg font-semibold">
+          Swiss Crypto Watch is a brand of RG Watches & Jewelry GmbH,
+          Summelenweg 91, 8808 Pfäffikon/Switzerland <br /> Official register
+          number CHE-307.000.557
+        </p>
       </div>
     </div>
   );

@@ -61,11 +61,8 @@ const Roadmap = () => {
     >
       <div className="absolute rounded-full top-[55%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col gap-3 text-center">
-        <HeadingComp sub="Roadmap" head="Development Roadmap" />
-        <p className="text-white text-base sm:text-[20px] leading-[30px] max-w-[950px]">
-          3 collections will be available, each limited to 999 pieces, Bespoke
-          collection will be available, limited to only 99 in 2023
-        </p>
+        <HeadingComp head="Development Roadmap" />
+
         {window.innerWidth > 1024 ? (
           <div className="grid gap-x-5 gap-y-7 grid-cols-2 xl:grid-cols-[auto__1fr__auto] w-full grid-rows-[1fr__auto__auto__auto] xl:grid-rows-3 mt-[40px] xl:mt-[80px]">
             {/* Row 1 roadmap ---------------------- */}

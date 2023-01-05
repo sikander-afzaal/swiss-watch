@@ -31,10 +31,10 @@ const Footer = () => {
             Roadmap
           </a>
           <a
-            href="#sales"
+            href="#details"
             className="text-white capitalize font-normal text-lg leading-[1] no-underline"
           >
-            Sales & Rewards
+            Company Details
           </a>
           <a
             href="#team"
