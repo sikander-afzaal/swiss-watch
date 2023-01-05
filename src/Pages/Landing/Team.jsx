@@ -67,7 +67,7 @@ const Team = () => {
         )}
         <div
           id="details"
-          className="flex justify-between gap-[60px] xl:flex-row flex-col -mb-12 sm:mb-[0px]  xl:mb-[180px] items-center w-full mt-[200px] sm:mt-[280px] xl:mt-[220px]"
+          className="flex justify-between gap-[60px] xl:flex-row flex-col -mb-12 sm:mb-[0px]  xl:mb-[120px] items-center w-full mt-[200px] sm:mt-[250px] xl:mt-[220px]"
         >
           <div className="flex gap-5 items-center justify-start text-center xl:text-left xl:items-start flex-col">
             <h6 className="text-blue font-bold sm:text-[60px] text-[35px] leading-[44px] sm:leading-[68px] ">
@@ -83,7 +83,7 @@ const Team = () => {
           </div>
           <img
             className="w-full max-w-[700px] object-contain"
-            src="https://assets.entrepreneur.com/content/3x2/2000/20150805204041-google-company-building-corporate.jpeg"
+            src="https://www.sebastianagosta.com/wp-content/uploads/2017/07/commercial-construction-building.jpg"
             alt=""
           />
         </div>
