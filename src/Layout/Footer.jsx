@@ -31,17 +31,18 @@ const Footer = () => {
             Roadmap
           </a>
           <a
-            href="#details"
-            className="text-white capitalize font-normal text-lg leading-[1] no-underline"
-          >
-            Company Details
-          </a>
-          <a
             href="#team"
             className="text-white capitalize font-normal text-lg leading-[1] no-underline"
           >
             Team
           </a>
+          <a
+            href="#details"
+            className="text-white capitalize font-normal text-lg leading-[1] no-underline"
+          >
+            Company Details
+          </a>
+
           <a
             href="#contact"
             className="text-white capitalize font-normal text-lg leading-[1] no-underline"
