@@ -9,9 +9,7 @@ const Blogs = () => {
       <div className="absolute rounded-full -top-[10%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col gap-3 text-center">
         <HeadingComp head="Latest News" sub="blog" />
-        <p className="text-white text-base sm:text-[20px] leading-[30px] ">
-          The key that unlocks you into The Swiss Cryptowatch Club
-        </p>{" "}
+
         {window.innerWidth > 1280 ? (
           <div className="grid items-stretch mt-[50px] grid-cols-3 w-full gap-6">
             <BlogBox

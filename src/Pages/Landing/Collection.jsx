@@ -554,7 +554,9 @@ const Collection = () => {
               Create your own unique Swiss Crypto Watch with our design team.
               This collection will be limited to 99 pieces in 2023.
             </p>
-            <Button name="View Collection" classes="mt-5" />
+            <a href="#contact">
+              <Button name="Apply" classes="mt-5" />
+            </a>
           </div>
         </div>
       </div>

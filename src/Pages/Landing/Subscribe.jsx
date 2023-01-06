@@ -14,9 +14,13 @@ const Subscribe = () => {
             more.
           </p>
         </div>
-        <button className="w-[200px] lg:w-[250px] font-bold text-base lg:text-[22px] leading-[1] h-[60px] lg:h-[70px] bg-black lg:bg-white text-white lg:text-blue rounded-full border-none">
+        <a
+          target={"blank"}
+          href="http://eepurl.com/ihGc0f"
+          className="w-[200px] lg:w-[250px] grid place-items-center no-underline font-bold text-base lg:text-[22px] leading-[1] h-[60px] lg:h-[70px] bg-black lg:bg-white text-white lg:text-blue rounded-full border-none"
+        >
           SUBSCRIBE NOW
-        </button>
+        </a>
       </div>
     </div>
   );
