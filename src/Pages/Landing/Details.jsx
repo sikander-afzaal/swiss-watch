@@ -44,7 +44,7 @@ const Details = () => {
             alt=""
           />
           <div className="flex justify-center items-center text-center xl:text-left xl:items-start flex-col gap-[15px]">
-            <HeadingComp sub="Usability" head="Usability" />
+            <HeadingComp sub="" head="Usability" />
             <img
               src="/usability.png"
               className="max-w-[350px] xl:hidden block sm:max-w-[500px] xl:max-w-[600px] object-contain w-full"
@@ -56,14 +56,14 @@ const Details = () => {
             </p>
             <p className="text-white text-base sm:text-[20px] leading-[30px] xl:max-w-none max-w-[600px]">
               They will show exact local time on the devices. (Air Drop,
-              available in Q1 2023)
+              available in Q2 2023)
             </p>
             {/* <Button name="Learn More" classes="mt-5" /> */}
           </div>{" "}
         </div>
         <div className="flex   justify-center xl:flex-row flex-col-reverse items-center gap-[0px] xl:gap-[100px] ">
           <div className="flex w-full justify-center items-center text-center xl:text-left xl:items-start flex-col gap-[15px]">
-            <HeadingComp sub="Coin" head="Swiss Crypto Watch Coin (SCWC)" />
+            <HeadingComp sub="" head="Swiss Crypto Watch Coin (SCWC)" />
             <div className="xl:hidden flex justify-center items-center">
               <img
                 src="/coin1.png"

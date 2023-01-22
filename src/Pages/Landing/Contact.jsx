@@ -26,29 +26,6 @@ const Contact = () => {
         ref={form}
         onSubmit={(e) => {
           e.preventDefault();
-          // service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service
-          // emailjs
-          //   .sendForm(
-          //     "service_mhzx49l",
-          //     "template_238cw38",
-          //     form.current,
-          //     "5FzKpFg6Ck-d1otwx"
-          //   )
-          //   .then(
-          //     (result) => {
-          //       setFormData({
-          //         first: "",
-          //         last: "",
-          //         email: "",
-          //         phone: "",
-          //         country: "",
-          //         message: "",
-          //       });
-          //     },
-          //     (error) => {
-          //       alert("error");
-          //     }
-          //   );
         }}
         className="bg-[rgba(255,255,255,0.06)] gap-[20px] mt-[30px] rounded-[24px] flex justify-start items-start flex-col w-full max-w-[704px] p-5 sm:p-7"
       >

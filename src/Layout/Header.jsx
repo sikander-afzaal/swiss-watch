@@ -86,7 +86,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
-              href="#"
+              href="https://twitter.com/CHCryptoWatch/"
               className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[36px] w-[36px] grid place-items-center border-white border-solid rounded-full text-[20px]"
               target={"blank"}
             >

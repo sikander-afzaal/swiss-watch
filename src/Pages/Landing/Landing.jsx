@@ -24,7 +24,7 @@ const Landing = () => {
       <Roadmap />
       <Soon />
       <Team />
-      <Blogs />
+      {/* <Blogs /> */}
       <Faq />
       <Contact />
       <Subscribe />

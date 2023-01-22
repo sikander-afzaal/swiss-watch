@@ -167,7 +167,8 @@ const Roadmap = () => {
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 Q1</h3>
               <p className={roadmapDescStyles}>
-                Welcome to Swiss Cryptowatch Club (SCWC)
+                Monthly collections will be unveiled, All Swiss Crypto Watches
+                can be used on Smart phones and Smart watches
               </p>
             </div>
 
@@ -175,15 +176,16 @@ const Roadmap = () => {
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 Q1</h3>
               <p className={roadmapDescStyles}>
-                First Swiss Crypto Watch unveiled, payable only with Swiss
-                Crypto Watch Coin (SCWC)
+                Monthly collections will be unveiled, Swiss Crypto Watch Coin
+                (SCWC ) will be tradable
               </p>
             </div>
             <div className="xl:text-center xl:mb-0 xl:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
               <h3 className={roadmapHeadStyles}>2023 Q2</h3>
               <p className={roadmapDescStyles}>
-                New monthly collections will be available
+                First Swiss Crypto Watch unveiled, payable only with Swiss
+                Crypto Watch Coin (SCWC)
               </p>
             </div>
             <div className="xl:text-center xl:mb-0 xl:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
@@ -202,7 +204,7 @@ const Roadmap = () => {
             </div>
             <div className="xl:text-center xl:mb-0 xl:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative xl:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>2023 q4</h3>
+              <h3 className={roadmapHeadStyles}>2023 Q4</h3>
               <p className={roadmapDescStyles}>
                 New monthly collections will be available
               </p>

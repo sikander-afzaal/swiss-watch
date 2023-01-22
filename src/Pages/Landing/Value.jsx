@@ -21,7 +21,7 @@ const Value = () => {
           <ValueBox
             head="Swiss Quality & Design"
             img="/val3.png"
-            desc="Swiss Crypto Watch is an idea from watch enthusiast Ronald Grob. He created the concept & developed the design with Daniel Labhart and Michael Kornmayer"
+            desc="Swiss Crypto Watch is an idea from watch enthusiast Ronald Grob. He created the concept & developed the design with Daniel Labhart and Michael Kornmayer."
           />
         </div>
       </div>
