@@ -86,7 +86,7 @@ const Roadmap2024 = () => {
                 alt=""
               />
             </div>
-            <div className="self-start top-[23%] col-start-1 col-end-2 row-start-5 row-end-6  left-0 mid:absolute flex justify-start h-full mid:h-auto mid:justify-center items-end flex-col gap-4 text-right">
+            <div className="self-start top-[23%] mid:col-auto mid:row-auto col-start-1 col-end-2 row-start-5 row-end-6  left-0 mid:absolute flex justify-start h-full mid:h-auto mid:justify-center items-end flex-col gap-4 text-right">
               <h2 className={roadmapHeadStyles}>2024 Q4</h2>
               <p className={roadmapDescStyles}>
                 SCW Wiinter 2024 Collection unveiled.
@@ -98,7 +98,7 @@ const Roadmap2024 = () => {
                 alt=""
               />
             </div>
-            <div className="self-start bottom-[25%] left-0 col-start-2 col-end-3 row-start-5 row-end-6  mid:absolute flex justify-start h-full mid:h-auto mid:justify-center items-start mid:items-end flex-col gap-4 text-right">
+            <div className="self-start bottom-[25%] mid:col-auto mid:row-auto left-0 col-start-2 col-end-3 row-start-5 row-end-6  mid:absolute flex justify-start h-full mid:h-auto mid:justify-center items-start mid:items-end flex-col gap-4 text-right">
               <h2 className={roadmapHeadStyles}>2024 Q3</h2>
               <p className={roadmapDescStyles}>
                 Diamond Collection will be unveiled.
@@ -123,7 +123,7 @@ const Roadmap2024 = () => {
                 alt=""
               />
             </div>
-            <div className="self-start top-[23%] right-0 col-start-1 col-end-2 row-start-6 row-end-7  mid:absolute flex justify-start h-full mid:h-auto mid:justify-center items-end mid:items-start flex-col gap-4 text-right mid:text-left">
+            <div className="self-start top-[23%] right-0 mid:col-auto mid:row-auto col-start-1 col-end-2 row-start-6 row-end-7  mid:absolute flex justify-start h-full mid:h-auto mid:justify-center items-end mid:items-start flex-col gap-4 text-right mid:text-left">
               <h2 className={roadmapHeadStyles}>2024 Q1</h2>
               <p className={roadmapDescStyles}>
                 Valentine Collection will be unveiled.
@@ -135,7 +135,7 @@ const Roadmap2024 = () => {
                 alt=""
               />
             </div>
-            <div className="self-start bottom-[18%] right-0 col-start-2 col-end-3 row-start-6 row-end-7  mid:absolute flex justify-start h-full mid:h-auto mid:justify-center items-start flex-col gap-4 text-left">
+            <div className="self-start bottom-[18%] right-0 mid:col-auto mid:row-auto col-start-2 col-end-3 row-start-6 row-end-7  mid:absolute flex justify-start h-full mid:h-auto mid:justify-center items-start flex-col gap-4 text-left">
               <h2 className={roadmapHeadStyles}>2024 Q2</h2>
               <p className={roadmapDescStyles}>
                 New model of Swiss Collection (Cheese) will be unveiled
