@@ -7,6 +7,7 @@ import Details from "./Details";
 import Faq from "./Faq";
 import Hero from "./Hero";
 import Roadmap from "./Roadmap";
+import Roadmap2024 from "./Roadmap2024";
 import Soon from "./Soon";
 import Subscribe from "./Subscribe";
 import Team from "./Team";
@@ -22,6 +23,7 @@ const Landing = () => {
       <Details />
       <Value />
       <Roadmap />
+      <Roadmap2024 />
       <Soon />
       <Team />
       {/* <Blogs /> */}
