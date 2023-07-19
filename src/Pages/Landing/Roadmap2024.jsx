@@ -6,7 +6,8 @@ import HeadingComp from "../../Components/HeadingComp";
 const Roadmap2024 = () => {
   const roadmapHeadStyles =
     "text-blue uppercase text-[24px] lg:text-[30px] leading-[24px] lg:leading-[30px] font-bold";
-  const roadmapDescStyles = "text-sm lg:text-base text-white max-w-[406px]";
+  const roadmapDescStyles =
+    "text-sm lg:text-base text-white  w-full max-w-[306px]  sm:max-w-[406px]";
   const circleStyles =
     "bg-blue rounded-full mid:static absolute top-0 -left-[45px]  mid:w-6 w-[12px] h-[12px] mid:h-6 border-solid box-content border-[#4A4A4E] border-[6px] mid:border-[12px]";
   const line1 = useRef();
@@ -66,7 +67,7 @@ const Roadmap2024 = () => {
       ref={container}
       className="full mt-[100px] mid:mt-[200px] relative isolate"
     >
-      <div className="absolute rounded-full top-[55%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
+      <div className="absolute whitespace-pre-wrap rounded-full top-[55%] -z-10 bg-blue lg:block hidden opacity-[0.18] blur-[150px]  left-0 w-[700px] h-[700px]"></div>
       <div className="section flex-col gap-3 text-center">
         <HeadingComp head="Development Roadmap 2024" />
 
@@ -208,9 +209,9 @@ const Roadmap2024 = () => {
             />
           </div>
         ) : (
-          <div className="grid self-start sm:self-center h-full w-max mid:gap-y-0 gap-y-[0px] gap-x-[30px] mid:gap-x-[50px] isolate  relative grid-cols-[auto__1fr] mid:grid-cols-6 mid:w-full  grid-rows-6 mid:grid-rows-1 mt-[40px] mid:mt-[80px]">
+          <div className="grid self-start sm:self-center h-full w-max mid:gap-y-0 gap-y-[0px] gap-x-[30px] mid:gap-x-[50px] isolate  relative grid-cols-[auto__1fr] mid:grid-cols-6 mid:w-full  grid-rows-[1fr__1fr__1fr__1fr__1fr__1fr__1fr__1fr__1fr__1fr] mid:grid-rows-1 mt-[40px] mid:mt-[80px]">
             {/* left line roadmap ---------- */}
-            <div className="relative row-start-1 row-end-7 mid:absolute left-0 top-5 -z-10 mid:w-full w-[6px] h-full mid:h-[6px] bg-[rgba(255,255,255,0.12)] overflow-hidden">
+            <div className="relative col-start-1 col-span-1 row-start-1 row-end-[11] mid:absolute left-0 top-5 -z-10 mid:w-full w-[6px] h-full mid:h-[6px] bg-[rgba(255,255,255,0.12)] overflow-hidden">
               <div
                 ref={mobileLine}
                 className="absolute left-0 top-0 w-full h-0 z-20 bg-[rgba(255,255,255,0.8)]"
@@ -218,50 +219,76 @@ const Roadmap2024 = () => {
             </div>
             {/* left line roadmap ---------- */}
 
-            <div className="mid:text-center mid:mb-0 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
+            <div className="mid:text-center mid:mb-0 col-span-1 col-start-2 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>2023 Q1</h3>
+              <h3 className={roadmapHeadStyles}>2024 Q1</h3>
               <p className={roadmapDescStyles}>
-                Monthly collections will be unveiled, All Swiss Crypto Watches
-                can be used on Smart phones and Smart watches
+                First SCW collection payable only witih Swiss Crypto Watch Coin
+                (SCWC) will be unveiled
+              </p>
+            </div>
+            <div className="mid:text-center mid:mb-0 col-span-1 col-start-2 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
+              <div className={circleStyles}></div>
+              <h3 className={roadmapHeadStyles}>2024 Q1</h3>
+              <p className={roadmapDescStyles}>
+                Valentine Collection will be unveiled.
               </p>
             </div>
 
-            <div className="mid:text-center mid:mb-0 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
+            <div className="mid:text-center mid:mb-0 col-span-1 col-start-2 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>2023 Q1</h3>
+              <h3 className={roadmapHeadStyles}>2024 Q1</h3>
               <p className={roadmapDescStyles}>
-                Monthly collections will be unveiled, Swiss Crypto Watch Coin
-                (SCWC ) will be tradable
+                New model of Swiss Collection (Chocolate) wlll be unveiled
               </p>
             </div>
-            <div className="mid:text-center mid:mb-0 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
+            <div className="mid:text-center mid:mb-0 col-span-1 col-start-2 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>2023 Q2</h3>
+              <h3 className={roadmapHeadStyles}>2024 Q2</h3>
               <p className={roadmapDescStyles}>
-                First Swiss Crypto Watch unveiled, payable only with Swiss
-                Crypto Watch Coin (SCWC)
+                New model of Swiss Collection (Cheese) will be unveiled
               </p>
             </div>
-            <div className="mid:text-center mid:mb-0 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
+            <div className="mid:text-center mid:mb-0 col-span-1 col-start-2 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>2023 Q2</h3>
+              <h3 className={roadmapHeadStyles}>2024 Q2</h3>
+              <p className={roadmapDescStyles}>Summer SCW will be unveiled</p>
+            </div>
+            <div className="mid:text-center mid:mb-0 col-span-1 col-start-2 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
+              <div className={circleStyles}></div>
+              <h3 className={roadmapHeadStyles}>2024 Q2</h3>
               <p className={roadmapDescStyles}>
-                New monthly collections will be available
+                First model which can be configurated from 3 different case
+                colours, 3 different dials and a variety of straps unveiled. For
+                SCW members only.
               </p>
             </div>
-            <div className="mid:text-center text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
+            <div className="mid:text-center text-left col-span-1 col-start-2 flex justify-start items-start relative mid:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>2023 Q3</h3>
+              <h3 className={roadmapHeadStyles}>2024 Q3</h3>
               <p className={roadmapDescStyles}>
-                New monthly collections will be available
+                Diamond Collection will be unveiled.
               </p>
             </div>
-            <div className="mid:text-center mid:mb-0 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
+            <div className="mid:text-center text-left col-span-1 col-start-2 flex justify-start items-start relative mid:items-center flex-col gap-4 ">
               <div className={circleStyles}></div>
-              <h3 className={roadmapHeadStyles}>2023 Q4</h3>
+              <h3 className={roadmapHeadStyles}>2024 Q3</h3>
               <p className={roadmapDescStyles}>
-                New monthly collections will be available
+                New model of Swiss Collection (Money) will be unveiled
+              </p>
+            </div>
+            <div className="mid:text-center mid:mb-0 col-span-1 col-start-2 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
+              <div className={circleStyles}></div>
+              <h3 className={roadmapHeadStyles}>2024 Q4</h3>
+              <p className={roadmapDescStyles}>
+                SCW Wiinter 2024 Collection unveiled.
+              </p>
+            </div>
+            <div className="mid:text-center mid:mb-0 col-span-1 col-start-2 mid:h-auto h-auto mb-[40px] text-left flex justify-start items-start relative mid:items-center flex-col gap-4 ">
+              <div className={circleStyles}></div>
+              <h3 className={roadmapHeadStyles}>2024 Q4</h3>
+              <p className={roadmapDescStyles}>
+                SCW Christmas Collection will be unveiled
               </p>
             </div>
           </div>
