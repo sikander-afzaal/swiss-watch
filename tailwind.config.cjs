@@ -23,6 +23,9 @@ module.exports = {
       backgroundImage: {
         hero: " radial-gradient(51.57% 51.57% at 73.36% 48.43%, #4A4A4E 0%, #04060F 100%)",
       },
+      screens: {
+        mid: "1400px",
+      },
     },
   },
   plugins: [],
