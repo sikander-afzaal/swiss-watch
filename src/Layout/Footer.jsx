@@ -3,8 +3,8 @@ import {
   faInstagram,
   faTwitter,
   faDiscord,
-  faYoutube,
   faFacebook,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -73,7 +73,7 @@ const Footer = () => {
             target={"blank"}
           >
             <FontAwesomeIcon icon={faDiscord} />
-          </a>{" "}
+          </a>
           <a
             href="https://www.youtube.com/channel/UCXXo8c67GfYPNtpJeQ3V4fQ"
             className="text-white transition-all duration-500 hover:bg-blue hover:border-blue border-[1px] h-[48px] w-[48px] grid place-items-center border-white border-solid rounded-full text-[20px]"

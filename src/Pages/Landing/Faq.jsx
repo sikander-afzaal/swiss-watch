@@ -23,7 +23,7 @@ const Faq = () => {
           <FaqTab
             question="WHAT IS THE PRICE OF A Swiss Crypto Watch NFT?"
             answer="We have conducted many Discussions with team and our community and Fans. 
-            We decided to offer each NFT from the Winter collection for only 0.28 ETH. 
+            We decided to offer each NFT from the First collection for only 0.28 ETH. 
             The special Bespoke Collection will cost 20 ETH each."
           />
           <FaqTab

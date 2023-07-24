@@ -30,8 +30,8 @@ const Roadmap2024 = () => {
       line2.current,
       line9.current,
       line4.current,
-      line6.current,
       line10.current,
+      line6.current,
       line5.current,
       line8.current,
       line3.current,
@@ -55,7 +55,7 @@ const Roadmap2024 = () => {
       gsap.to(mobileLine.current, {
         scrollTrigger: {
           trigger: container.current,
-          start: "20% 20%",
+          start: "20% 40%",
           scrub: 2,
         },
         height: "100%",
